@@ -32,8 +32,9 @@ async def show_rating_by_id(request, id):
 
 
 @rating_validate()
-@rating_details.route("/create", methods=["GET"])
+@rating_details.route("/create", methods=["POST"])
 async def create_rating(request):
-    _response = await RatingManager.create_rating(request)
+    payload = request.json
+    payload = await RatingManager.create_rating(request, payload)
     return send_response({"message": json.dumps(
-        _response, indent=4, sort_keys=True, default=str)})
+        payload, indent=4, sort_keys=True, default=str)})

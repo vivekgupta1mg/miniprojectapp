@@ -8,6 +8,7 @@ from ..app import Base as DB
 from ...managers.user import UserManager
 from ...managers.question import QuestionManager
 
+
 class RatingManager:
     config = CONFIG.config
 
@@ -22,7 +23,7 @@ class RatingManager:
         return ratings
 
     @classmethod
-    async def create_rating(cls, payload):
+    async def create_rating(cls, request, payload):
         # user_id = await UserManager.get_user_by_id({"username": "vivek"})
         # question_id = await QuestionManager.get_question_by_id({"id": 22})
         # answer_id = await AnswerManager.get_answer_by_id({"id": 1})
@@ -30,6 +31,3 @@ class RatingManager:
         # payload = {"question_id": question_id, "user_id": user_id, "answer_id": answer_id, "rating_star": 4}
         payload = await DB.create_instance(Ratings, payload)
         return payload
-
-
-       

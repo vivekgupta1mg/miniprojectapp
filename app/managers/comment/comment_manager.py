@@ -24,7 +24,7 @@ class CommentManager:
         return comments
 
     @classmethod
-    async def create_comment(cls, payload):
+    async def create_comment(cls, request, payload):
         # user_id = await UserManager.get_user_by_id({"username": "vivek"})
         # question_id = await QuestionManager.get_question_by_id({"id": 22})
         # answer_id = await AnswerManager.get_answer_by_id({"id": 1})
