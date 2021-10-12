@@ -1,0 +1,23 @@
+{
+    "APM": {},
+     "NAME": "sanic_3",
+     "HTTP_VERSION": "1.0.0",
+     "HOST": "0.0.0.0",
+     "PORT": 7071,
+     "WORKERS": 2,
+     "DEBUG": false,
+     "POSTGRES_HOST": "localhost",
+     "POSTGRES_PORT": 5432,
+     "POSTGRES_DB": "sodb",
+     "POSTGRES_USER": "so",
+     "POSTGRES_PASS": "so123",
+     "INTERSERVICE_TIMEOUT": 60,
+    
+     "REDIS_HOST": "127.0.0.1",
+     "REDIS_PORT": 6379,
+    
+     "SENTRY_DSN": "",
+     "LOCATION_SERVICE": {
+    "HOST": ""
+     }
+}

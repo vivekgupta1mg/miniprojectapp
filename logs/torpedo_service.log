@@ -1,0 +1,1109 @@
+2021-10-07 22:39:03,231206 - sanic.root - INFO - Received signal SIGINT. Shutting down.
+2021-10-07 22:39:03,234442 - sanic.root - INFO - Stopping worker [63271]
+2021-10-07 22:39:03,236447 - sanic.root - INFO - Stopping worker [63272]
+2021-10-07 22:39:03,253429 - sanic.root - INFO - Server Stopped
+2021-10-07 22:39:07,025177 - sanic.root - INFO - ping
+2021-10-07 22:39:07,025356 - sanic.root - INFO - v4/user_details/login
+2021-10-07 22:39:07,025466 - sanic.root - INFO - v4/user_details/add-user
+2021-10-07 22:39:07,025576 - sanic.root - INFO - v4/question_details/create
+2021-10-07 22:39:07,025661 - sanic.root - INFO - v4/question_details
+2021-10-07 22:39:07,025730 - sanic.root - INFO - v4/answer_details
+2021-10-07 22:39:07,025799 - sanic.root - INFO - v4/answer_details/create
+2021-10-07 22:39:07,025870 - sanic.root - INFO - v4/comment_details
+2021-10-07 22:39:07,025937 - sanic.root - INFO - v4/comment_details/create
+2021-10-07 22:39:07,026004 - sanic.root - INFO - v4/rating_details/create
+2021-10-07 22:39:07,026072 - sanic.root - INFO - v4/rating_details
+2021-10-07 22:39:07,026139 - sanic.root - INFO - v4/so_basictest
+2021-10-07 22:39:07,026210 - sanic.root - INFO - v4/question_details/<id:int>
+2021-10-07 22:39:07,026319 - sanic.root - INFO - v4/answer_details/<id:int>
+2021-10-07 22:39:07,026438 - sanic.root - INFO - v4/comment_details/<id:int>
+2021-10-07 22:39:07,026519 - sanic.root - INFO - v4/rating_details/<id:int>
+2021-10-07 22:39:07,026701 - sanic.root - INFO - Goin' Fast @ http://0.0.0.0:7071
+2021-10-07 22:39:07,093949 - sanic.root - INFO - Starting worker [63582]
+2021-10-07 22:39:07,095114 - sanic.root - INFO - Starting worker [63581]
+2021-10-07 22:39:23,648912 - sanic.error - ERROR - Object does not exist
+Traceback (most recent call last):
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/sanic/app.py", line 770, in handle_request
+    response = await response
+  File "/Users/vivek/Desktop/sanic_3/app/routes/answer_details.py", line 19, in show_answer_by_id
+    _response = await AnswerManager.get_answer_by_id(request, id)
+  File "/Users/vivek/Desktop/sanic_3/app/managers/answer_manager.py", line 20, in get_answer_by_id
+    answers = await Answers.get(id=answer_id)
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/tortoise/queryset.py", line 920, in _execute
+    raise DoesNotExist("Object does not exist")
+tortoise.exceptions.DoesNotExist: Object does not exist
+2021-10-07 22:39:23,674166 - sanic.access - INFO - 127.0.0.1:59229 GET http://localhost:7071/v4/answer_details/22  500 127 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 9bfaa769-5913-44c6-88e7-09815b0dd371
+2021-10-07 22:39:23,763680 - sanic.root - INFO - Handled exception NotFound, for method None
+2021-10-07 22:39:23,771110 - sanic.access - INFO - 127.0.0.1:59229 GET http://localhost:7071/favicon.ico  400 161 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 1364ee0a-8f17-4ca7-9b13-2c46988432d9
+2021-10-07 22:40:23,654376 - sanic.root - INFO - Handled exception RequestTimeout, for method None
+2021-10-07 22:40:23,668237 - sanic.access - INFO - UNKNOWN NONE http:///*  408 117 None 3a1bb06c-21be-4106-96b7-09a60d456c7c
+2021-10-07 22:48:35,549494 - sanic.root - INFO - Received signal SIGINT. Shutting down.
+2021-10-07 22:48:35,552987 - sanic.root - INFO - Stopping worker [63581]
+2021-10-07 22:48:35,553157 - sanic.root - INFO - Stopping worker [63582]
+2021-10-07 22:48:35,568554 - sanic.root - INFO - Server Stopped
+2021-10-07 22:48:39,371721 - sanic.root - INFO - ping
+2021-10-07 22:48:39,373327 - sanic.root - INFO - v4/user_details/add-user
+2021-10-07 22:48:39,373518 - sanic.root - INFO - v4/user_details/login
+2021-10-07 22:48:39,373846 - sanic.root - INFO - v4/question_details/create
+2021-10-07 22:48:39,375950 - sanic.root - INFO - v4/question_details
+2021-10-07 22:48:39,377980 - sanic.root - INFO - v4/answer_details
+2021-10-07 22:48:39,378191 - sanic.root - INFO - v4/answer_details/create
+2021-10-07 22:48:39,379963 - sanic.root - INFO - v4/comment_details
+2021-10-07 22:48:39,380232 - sanic.root - INFO - v4/comment_details/create
+2021-10-07 22:48:39,382110 - sanic.root - INFO - v4/rating_details/create
+2021-10-07 22:48:39,382320 - sanic.root - INFO - v4/rating_details
+2021-10-07 22:48:39,383857 - sanic.root - INFO - v4/so_basictest
+2021-10-07 22:48:39,384112 - sanic.root - INFO - v4/question_details/<id:int>
+2021-10-07 22:48:39,385056 - sanic.root - INFO - v4/answer_details/<id:int>
+2021-10-07 22:48:39,387731 - sanic.root - INFO - v4/comment_details/<id:int>
+2021-10-07 22:48:39,387955 - sanic.root - INFO - v4/rating_details/<id:int>
+2021-10-07 22:48:39,390928 - sanic.root - INFO - Goin' Fast @ http://0.0.0.0:7071
+2021-10-07 22:48:39,456474 - sanic.root - INFO - Starting worker [63814]
+2021-10-07 22:48:39,458612 - sanic.root - INFO - Starting worker [63813]
+2021-10-07 22:48:46,089112 - sanic.error - ERROR - 'function' object has no attribute 'dumps'
+Traceback (most recent call last):
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/sanic/app.py", line 770, in handle_request
+    response = await response
+  File "/Users/vivek/Desktop/sanic_3/app/routes/answer_details.py", line 13, in show_answer
+    return send_response({'message': json.dumps(
+AttributeError: 'function' object has no attribute 'dumps'
+2021-10-07 22:48:46,108482 - sanic.access - INFO - 127.0.0.1:59656 GET http://localhost:7071/v4/answer_details/  500 127 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 83c9c9e7-0792-43f1-a545-4f70f86ace83
+2021-10-07 22:48:46,229589 - sanic.root - INFO - Handled exception NotFound, for method None
+2021-10-07 22:48:46,239918 - sanic.access - INFO - 127.0.0.1:59656 GET http://localhost:7071/favicon.ico  400 161 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 d07451ce-0ee6-4221-8312-fede54fac72d
+2021-10-07 22:48:59,492329 - sanic.error - ERROR - get_question_by_id() missing 1 required positional argument: 'question_id'
+Traceback (most recent call last):
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/sanic/app.py", line 770, in handle_request
+    response = await response
+  File "/Users/vivek/Desktop/sanic_3/app/routes/answer_details.py", line 26, in create_answer
+    _response = await AnswerManager.create_answer(request)
+  File "/Users/vivek/Desktop/sanic_3/app/managers/answer_manager.py", line 26, in create_answer
+    question_id = await QuestionManager.get_question_by_id({'question_text': 'what is python??'})
+TypeError: get_question_by_id() missing 1 required positional argument: 'question_id'
+2021-10-07 22:48:59,503837 - sanic.access - INFO - 127.0.0.1:59657 GET http://localhost:7071/v4/answer_details/create  500 127 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 54c31a27-8422-40b9-ac93-6e040e0a4c39
+2021-10-07 22:48:59,553865 - sanic.root - INFO - Handled exception NotFound, for method None
+2021-10-07 22:48:59,558099 - sanic.access - INFO - 127.0.0.1:59657 GET http://localhost:7071/favicon.ico  400 161 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 b4af2144-05fa-4bd0-9acb-4783954a243c
+2021-10-07 22:49:19,577652 - sanic.error - ERROR - get_question_by_id() missing 1 required positional argument: 'question_id'
+Traceback (most recent call last):
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/sanic/app.py", line 770, in handle_request
+    response = await response
+  File "/Users/vivek/Desktop/sanic_3/app/routes/answer_details.py", line 26, in create_answer
+    _response = await AnswerManager.create_answer(request)
+  File "/Users/vivek/Desktop/sanic_3/app/managers/answer_manager.py", line 26, in create_answer
+    question_id = await QuestionManager.get_question_by_id({'question_text': 'what is python??'})
+TypeError: get_question_by_id() missing 1 required positional argument: 'question_id'
+2021-10-07 22:49:19,587915 - sanic.access - INFO - 127.0.0.1:59721 GET http://localhost:7071/v4/answer_details/create  500 127 PostmanRuntime/7.28.4 7b9cfb1c-1d1f-412d-aca5-1b91bdbf08b7
+2021-10-07 22:49:59,514173 - sanic.root - INFO - Handled exception RequestTimeout, for method None
+2021-10-07 22:49:59,518015 - sanic.access - INFO - UNKNOWN NONE http:///*  408 117 None 13d279d0-3076-40f9-b07e-9dcddb258425
+2021-10-07 22:50:54,441215 - sanic.error - ERROR - get_question_by_id() missing 1 required positional argument: 'question_id'
+Traceback (most recent call last):
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/sanic/app.py", line 770, in handle_request
+    response = await response
+  File "/Users/vivek/Desktop/sanic_3/app/routes/answer_details.py", line 26, in create_answer
+    _response = await AnswerManager.create_answer(request)
+  File "/Users/vivek/Desktop/sanic_3/app/managers/answer_manager.py", line 26, in create_answer
+    question_id = await QuestionManager.get_question_by_id({'question_text': 'what is python??'})
+TypeError: get_question_by_id() missing 1 required positional argument: 'question_id'
+2021-10-07 22:50:54,445318 - sanic.access - INFO - 127.0.0.1:59807 GET http://localhost:7071/v4/answer_details/create  500 127 PostmanRuntime/7.28.4 0a987023-9d1a-445e-9c88-a416f0476be1
+2021-10-07 22:51:17,850996 - sanic.error - ERROR - get_question_by_id() missing 1 required positional argument: 'question_id'
+Traceback (most recent call last):
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/sanic/app.py", line 770, in handle_request
+    response = await response
+  File "/Users/vivek/Desktop/sanic_3/app/routes/answer_details.py", line 26, in create_answer
+    _response = await AnswerManager.create_answer(request)
+  File "/Users/vivek/Desktop/sanic_3/app/managers/answer_manager.py", line 26, in create_answer
+    question_id = await QuestionManager.get_question_by_id({'question_text': 'what is python??'})
+TypeError: get_question_by_id() missing 1 required positional argument: 'question_id'
+2021-10-07 22:51:17,853926 - sanic.access - INFO - 127.0.0.1:59817 GET http://localhost:7071/v4/answer_details/create  500 127 PostmanRuntime/7.28.4 ac552694-b6ce-4f4c-a6d8-c10ba2daa967
+2021-10-07 23:05:30,321924 - sanic.access - INFO - 127.0.0.1:60335 GET http://localhost:7071/v4/question_details/create  200 74 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 ef977919-d859-46c3-adb7-d938cb265ba1
+2021-10-07 23:05:37,772939 - sanic.access - INFO - 127.0.0.1:60336 GET http://localhost:7071/v4/question_details/  200 216 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 c7673058-f170-4601-a7f0-81c03ff878b9
+2021-10-07 23:05:37,901045 - sanic.root - INFO - Handled exception NotFound, for method None
+2021-10-07 23:05:37,905598 - sanic.access - INFO - 127.0.0.1:60336 GET http://localhost:7071/favicon.ico  400 161 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 4fe3fae9-8150-4406-bae8-873925409b33
+2021-10-07 23:05:53,030165 - sanic.access - INFO - 127.0.0.1:60339 GET http://localhost:7071/v4/question_details/22  200 74 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 2aaad506-e7c8-4463-9ab8-e5f775eec973
+2021-10-07 23:05:53,076482 - sanic.root - INFO - Handled exception NotFound, for method None
+2021-10-07 23:05:53,082640 - sanic.access - INFO - 127.0.0.1:60339 GET http://localhost:7071/favicon.ico  400 161 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 2b0c9a8d-7660-4c7e-bf30-c6e104be71b0
+2021-10-07 23:05:59,417924 - sanic.access - INFO - 127.0.0.1:60339 GET http://localhost:7071/v4/question_details/23  200 74 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 3b05354a-0812-4a85-b955-316f3dbb093b
+2021-10-07 23:05:59,462236 - sanic.root - INFO - Handled exception NotFound, for method None
+2021-10-07 23:05:59,468713 - sanic.access - INFO - 127.0.0.1:60339 GET http://localhost:7071/favicon.ico  400 161 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 c5f658db-23f2-4244-a2fb-7d92ac15983c
+2021-10-07 23:06:07,011210 - sanic.access - INFO - 127.0.0.1:60357 GET http://localhost:7071/v4/question_details/24  200 74 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 5bc715c2-622d-4af8-abb2-90ae61a87768
+2021-10-07 23:06:07,059669 - sanic.root - INFO - Handled exception NotFound, for method None
+2021-10-07 23:06:07,065428 - sanic.access - INFO - 127.0.0.1:60357 GET http://localhost:7071/favicon.ico  400 161 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 e49921e4-5594-4882-90a1-68e4cdc9ecaf
+2021-10-07 23:06:14,104642 - sanic.access - INFO - 127.0.0.1:60359 GET http://localhost:7071/v4/question_details/  200 216 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 2b351fed-d0b0-4416-a83d-3b7936a44320
+2021-10-07 23:06:14,150673 - sanic.root - INFO - Handled exception NotFound, for method None
+2021-10-07 23:06:14,156748 - sanic.access - INFO - 127.0.0.1:60359 GET http://localhost:7071/favicon.ico  400 161 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 a71be8cd-7a3a-4d0c-9355-aa3f7c6bd679
+2021-10-07 23:07:03,729009 - sanic.error - ERROR - 'function' object has no attribute 'dumps'
+Traceback (most recent call last):
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/sanic/app.py", line 770, in handle_request
+    response = await response
+  File "/Users/vivek/Desktop/sanic_3/app/routes/answer_details.py", line 13, in show_answer
+    return send_response({'message': json.dumps(
+AttributeError: 'function' object has no attribute 'dumps'
+2021-10-07 23:07:03,736546 - sanic.access - INFO - 127.0.0.1:60361 GET http://localhost:7071/v4/answer_details/  500 127 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 6d06db6b-db6f-4e62-9aed-b3255ce6ad0a
+2021-10-07 23:07:03,828093 - sanic.root - INFO - Handled exception NotFound, for method None
+2021-10-07 23:07:03,832650 - sanic.access - INFO - 127.0.0.1:60361 GET http://localhost:7071/favicon.ico  400 161 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 45378545-a8f2-4f14-9d44-03e421bb2557
+2021-10-07 23:08:03,721828 - sanic.root - INFO - Handled exception RequestTimeout, for method None
+2021-10-07 23:08:03,725207 - sanic.access - INFO - UNKNOWN NONE http:///*  408 117 None 77e5666a-916e-4c06-9f14-20f768a32179
+2021-10-07 23:09:12,170784 - sanic.root - INFO - Received signal SIGINT. Shutting down.
+2021-10-07 23:09:12,173624 - sanic.root - INFO - Stopping worker [63814]
+2021-10-07 23:09:12,173359 - sanic.root - INFO - Stopping worker [63813]
+2021-10-07 23:09:12,189778 - sanic.root - INFO - Server Stopped
+2021-10-07 23:09:15,933189 - sanic.root - INFO - ping
+2021-10-07 23:09:15,933409 - sanic.root - INFO - v4/user_details/add-user
+2021-10-07 23:09:15,933611 - sanic.root - INFO - v4/user_details/login
+2021-10-07 23:09:15,933800 - sanic.root - INFO - v4/question_details/create
+2021-10-07 23:09:15,934180 - sanic.root - INFO - v4/question_details
+2021-10-07 23:09:15,934408 - sanic.root - INFO - v4/answer_details/create
+2021-10-07 23:09:15,934571 - sanic.root - INFO - v4/answer_details
+2021-10-07 23:09:15,934655 - sanic.root - INFO - v4/comment_details
+2021-10-07 23:09:15,934728 - sanic.root - INFO - v4/comment_details/create
+2021-10-07 23:09:15,934799 - sanic.root - INFO - v4/rating_details
+2021-10-07 23:09:15,934867 - sanic.root - INFO - v4/rating_details/create
+2021-10-07 23:09:15,934954 - sanic.root - INFO - v4/so_basictest
+2021-10-07 23:09:15,935018 - sanic.root - INFO - v4/question_details/<id:int>
+2021-10-07 23:09:15,935080 - sanic.root - INFO - v4/answer_details/<id:int>
+2021-10-07 23:09:15,935141 - sanic.root - INFO - v4/comment_details/<id:int>
+2021-10-07 23:09:15,935201 - sanic.root - INFO - v4/rating_details/<id:int>
+2021-10-07 23:09:15,935435 - sanic.root - INFO - Goin' Fast @ http://0.0.0.0:7071
+2021-10-07 23:09:15,998595 - sanic.root - INFO - Starting worker [64339]
+2021-10-07 23:09:15,998627 - sanic.root - INFO - Starting worker [64338]
+2021-10-07 23:09:21,368991 - sanic.access - INFO - 127.0.0.1:60497 GET http://localhost:7071/v4/answer_details/  200 47 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 3be5e52e-79d1-454f-8ffe-3332a12f248d
+2021-10-07 23:09:21,397819 - sanic.root - INFO - Handled exception NotFound, for method None
+2021-10-07 23:09:21,405289 - sanic.access - INFO - 127.0.0.1:60497 GET http://localhost:7071/favicon.ico  400 161 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 2a85f440-fa68-418d-b985-15064b53814c
+2021-10-07 23:09:27,064078 - sanic.error - ERROR - Object does not exist
+Traceback (most recent call last):
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/sanic/app.py", line 770, in handle_request
+    response = await response
+  File "/Users/vivek/Desktop/sanic_3/app/routes/answer_details.py", line 18, in show_answer_by_id
+    _response = await AnswerManager.get_answer_by_id(request, id)
+  File "/Users/vivek/Desktop/sanic_3/app/managers/answer_manager.py", line 20, in get_answer_by_id
+    answers = await Answers.get(id=answer_id)
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/tortoise/queryset.py", line 920, in _execute
+    raise DoesNotExist("Object does not exist")
+tortoise.exceptions.DoesNotExist: Object does not exist
+2021-10-07 23:09:27,074834 - sanic.access - INFO - 127.0.0.1:60497 GET http://localhost:7071/v4/answer_details/22  500 127 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 4f9c358b-0adb-460a-beb6-65f5446cb6dc
+2021-10-07 23:09:27,115591 - sanic.root - INFO - Handled exception NotFound, for method None
+2021-10-07 23:09:27,120814 - sanic.access - INFO - 127.0.0.1:60497 GET http://localhost:7071/favicon.ico  400 161 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 98a68fde-d757-472a-ba67-b284097f5829
+2021-10-07 23:09:59,721401 - sanic.root - INFO - Received signal SIGINT. Shutting down.
+2021-10-07 23:09:59,724129 - sanic.root - INFO - Stopping worker [64338]
+2021-10-07 23:09:59,724342 - sanic.root - INFO - Stopping worker [64339]
+2021-10-07 23:10:15,100323 - sanic.root - INFO - Handled exception ServiceUnavailable, for method None
+2021-10-07 23:10:15,108396 - sanic.error - ERROR - protocol.connection_task uncaught
+Traceback (most recent call last):
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/sanic/http.py", line 130, in http1
+    await self.http1_request_header()
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/sanic/http.py", line 203, in http1_request_header
+    await self._receive_more()
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/sanic/server.py", line 222, in receive_more
+    await self._data_received.wait()
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/asyncio/locks.py", line 309, in wait
+    await fut
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/sanic/server.py", line 197, in connection_task
+    await self._http.http1()
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/sanic/http.py", line 146, in http1
+    await self.error_response(e)
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/sanic/http.py", line 420, in error_response
+    await app.handle_exception(self.request, exception)
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/sanic/app.py", line 704, in handle_exception
+    await response.send(end_stream=True)
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/sanic/response.py", line 122, in send
+    await self.stream.send(data, end_stream=end_stream)
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/sanic/http.py", line 348, in http1_response_header
+    self.log_response()
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/sanic/http.py", line 457, in log_response
+    extra["request"] = f"{req.method} {req.url}"
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/sanic/request.py", line 669, in url
+    (self.scheme, self.host, self.path, None, self.query_string, None)
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/sanic/request.py", line 596, in scheme
+    if self.transport.get_extra_info("sslcontext"):
+AttributeError: 'NoneType' object has no attribute 'get_extra_info'
+2021-10-07 23:10:15,124500 - sanic.root - INFO - Server Stopped
+2021-10-07 23:10:33,453935 - sanic.root - INFO - ping
+2021-10-07 23:10:33,454112 - sanic.root - INFO - v4/user_details/add-user
+2021-10-07 23:10:33,454225 - sanic.root - INFO - v4/user_details/login
+2021-10-07 23:10:33,454331 - sanic.root - INFO - v4/question_details
+2021-10-07 23:10:33,454418 - sanic.root - INFO - v4/question_details/create
+2021-10-07 23:10:33,454488 - sanic.root - INFO - v4/answer_details
+2021-10-07 23:10:33,454558 - sanic.root - INFO - v4/answer_details/create
+2021-10-07 23:10:33,454625 - sanic.root - INFO - v4/comment_details
+2021-10-07 23:10:33,454695 - sanic.root - INFO - v4/comment_details/create
+2021-10-07 23:10:33,454762 - sanic.root - INFO - v4/rating_details/create
+2021-10-07 23:10:33,454830 - sanic.root - INFO - v4/rating_details
+2021-10-07 23:10:33,454895 - sanic.root - INFO - v4/so_basictest
+2021-10-07 23:10:33,454961 - sanic.root - INFO - v4/question_details/<id:int>
+2021-10-07 23:10:33,455052 - sanic.root - INFO - v4/answer_details/<id:int>
+2021-10-07 23:10:33,455163 - sanic.root - INFO - v4/comment_details/<id:int>
+2021-10-07 23:10:33,455267 - sanic.root - INFO - v4/rating_details/<id:int>
+2021-10-07 23:10:33,455434 - sanic.root - INFO - Goin' Fast @ http://0.0.0.0:7071
+2021-10-07 23:10:33,500706 - sanic.root - INFO - Starting worker [64388]
+2021-10-07 23:10:33,505376 - sanic.root - INFO - Starting worker [64389]
+2021-10-07 23:10:37,890385 - sanic.access - INFO - 127.0.0.1:60587 GET http://localhost:7071/v4/answer_details/  200 47 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 a5d9cf87-bff7-4d41-8cad-2914dcb9ca18
+2021-10-07 23:10:37,994020 - sanic.root - INFO - Handled exception NotFound, for method None
+2021-10-07 23:10:38,003339 - sanic.access - INFO - 127.0.0.1:60587 GET http://localhost:7071/favicon.ico  400 161 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 c3bb0276-84ae-47d6-bbd8-cbf9a56f0ba2
+2021-10-07 23:10:40,588328 - sanic.error - ERROR - Object does not exist
+Traceback (most recent call last):
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/sanic/app.py", line 770, in handle_request
+    response = await response
+  File "/Users/vivek/Desktop/sanic_3/app/routes/answer_details.py", line 18, in show_answer_by_id
+    _response = await AnswerManager.get_answer_by_id(request, id)
+  File "/Users/vivek/Desktop/sanic_3/app/managers/answer_manager.py", line 20, in get_answer_by_id
+    answers = await Answers.get(id=answer_id)
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/tortoise/queryset.py", line 920, in _execute
+    raise DoesNotExist("Object does not exist")
+tortoise.exceptions.DoesNotExist: Object does not exist
+2021-10-07 23:10:40,597388 - sanic.access - INFO - 127.0.0.1:60587 GET http://localhost:7071/v4/answer_details/22  500 127 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 f897e4bf-309f-4f53-a1fd-4e2d4b3d3c52
+2021-10-07 23:10:41,259316 - sanic.root - INFO - Handled exception NotFound, for method None
+2021-10-07 23:10:41,264980 - sanic.access - INFO - 127.0.0.1:60587 GET http://localhost:7071/favicon.ico  400 161 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 d2d80b05-05db-4ef6-ad8c-bbb3d7b13d39
+2021-10-07 23:11:37,907936 - sanic.root - INFO - Handled exception RequestTimeout, for method None
+2021-10-07 23:11:37,911645 - sanic.access - INFO - UNKNOWN NONE http:///*  408 117 None 9c479b29-179b-448f-b1b0-c6028d834bdd
+2021-10-07 23:15:14,369604 - sanic.root - INFO - Received signal SIGINT. Shutting down.
+2021-10-07 23:15:14,372190 - sanic.root - INFO - Stopping worker [64389]
+2021-10-07 23:15:14,372304 - sanic.root - INFO - Stopping worker [64388]
+2021-10-07 23:15:14,385693 - sanic.root - INFO - Server Stopped
+2021-10-07 23:24:26,924753 - sanic.root - INFO - ping
+2021-10-07 23:24:26,926330 - sanic.root - INFO - v4/user_details/login
+2021-10-07 23:24:26,926518 - sanic.root - INFO - v4/user_details/add-user
+2021-10-07 23:24:26,926670 - sanic.root - INFO - v4/question_details/create
+2021-10-07 23:24:26,926780 - sanic.root - INFO - v4/question_details
+2021-10-07 23:24:26,926872 - sanic.root - INFO - v4/answer_details
+2021-10-07 23:24:26,926958 - sanic.root - INFO - v4/answer_details/create
+2021-10-07 23:24:26,927047 - sanic.root - INFO - v4/comment_details/create
+2021-10-07 23:24:26,927137 - sanic.root - INFO - v4/comment_details
+2021-10-07 23:24:26,927222 - sanic.root - INFO - v4/rating_details
+2021-10-07 23:24:26,927307 - sanic.root - INFO - v4/rating_details/create
+2021-10-07 23:24:26,927391 - sanic.root - INFO - v4/so_basictest
+2021-10-07 23:24:26,927474 - sanic.root - INFO - v4/question_details/<id:int>
+2021-10-07 23:24:26,927561 - sanic.root - INFO - v4/answer_details/<id:int>
+2021-10-07 23:24:26,927646 - sanic.root - INFO - v4/comment_details/<id:int>
+2021-10-07 23:24:26,927730 - sanic.root - INFO - v4/rating_details/<id:int>
+2021-10-07 23:24:26,927998 - sanic.root - INFO - Goin' Fast @ http://0.0.0.0:7071
+2021-10-07 23:24:26,989571 - sanic.root - INFO - Starting worker [64564]
+2021-10-07 23:24:26,989570 - sanic.root - INFO - Starting worker [64565]
+2021-10-07 23:26:09,556964 - sanic.root - INFO - Handled exception MethodNotSupported, for method None
+2021-10-07 23:26:09,569009 - sanic.access - INFO - 127.0.0.1:60813 POST http://localhost:7071/v4/answer_details/create  400 207 PostmanRuntime/7.28.4 8776620a-f58a-4e7f-b13b-886b1d7771c5
+2021-10-07 23:29:44,024247 - sanic.error - ERROR - get_question_by_id() missing 1 required positional argument: 'question_id'
+Traceback (most recent call last):
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/sanic/app.py", line 770, in handle_request
+    response = await response
+  File "/Users/vivek/Desktop/sanic_3/app/routes/answer_details.py", line 25, in create_answer
+    _response = await AnswerManager.create_answer(request)
+  File "/Users/vivek/Desktop/sanic_3/app/managers/answer_manager.py", line 26, in create_answer
+    question_id = await QuestionManager.get_question_by_id({"question_text": "how is python?"})
+TypeError: get_question_by_id() missing 1 required positional argument: 'question_id'
+2021-10-07 23:29:44,046062 - sanic.access - INFO - 127.0.0.1:60938 GET http://localhost:7071/v4/answer_details/create  500 127 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 47d21dd6-215c-43d9-8d1a-854c3686fac4
+2021-10-07 23:29:44,125298 - sanic.root - INFO - Handled exception NotFound, for method None
+2021-10-07 23:29:44,131955 - sanic.access - INFO - 127.0.0.1:60938 GET http://localhost:7071/favicon.ico  400 161 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 61e14427-7ab5-45fe-a288-544368a2089e
+2021-10-07 23:30:44,014829 - sanic.root - INFO - Handled exception RequestTimeout, for method None
+2021-10-07 23:30:44,026339 - sanic.access - INFO - UNKNOWN NONE http:///*  408 117 None b8f9e670-3596-482b-93f3-940fb09ababd
+2021-10-07 23:34:45,177514 - sanic.root - INFO - Received signal SIGINT. Shutting down.
+2021-10-07 23:34:45,180379 - sanic.root - INFO - Stopping worker [64564]
+2021-10-07 23:34:45,180603 - sanic.root - INFO - Stopping worker [64565]
+2021-10-07 23:34:45,195365 - sanic.root - INFO - Server Stopped
+2021-10-07 23:34:49,868585 - sanic.root - INFO - ping
+2021-10-07 23:34:49,868756 - sanic.root - INFO - v4/user_details/login
+2021-10-07 23:34:49,868864 - sanic.root - INFO - v4/user_details/add-user
+2021-10-07 23:34:49,868969 - sanic.root - INFO - v4/question_details
+2021-10-07 23:34:49,869052 - sanic.root - INFO - v4/question_details/create
+2021-10-07 23:34:49,869120 - sanic.root - INFO - v4/answer_details/create
+2021-10-07 23:34:49,869187 - sanic.root - INFO - v4/answer_details
+2021-10-07 23:34:49,869252 - sanic.root - INFO - v4/comment_details/create
+2021-10-07 23:34:49,869317 - sanic.root - INFO - v4/comment_details
+2021-10-07 23:34:49,869380 - sanic.root - INFO - v4/rating_details
+2021-10-07 23:34:49,869456 - sanic.root - INFO - v4/rating_details/create
+2021-10-07 23:34:49,869522 - sanic.root - INFO - v4/so_basictest
+2021-10-07 23:34:49,869585 - sanic.root - INFO - v4/question_details/<id:int>
+2021-10-07 23:34:49,869662 - sanic.root - INFO - v4/answer_details/<id:int>
+2021-10-07 23:34:49,869774 - sanic.root - INFO - v4/comment_details/<id:int>
+2021-10-07 23:34:49,869887 - sanic.root - INFO - v4/rating_details/<id:int>
+2021-10-07 23:34:49,870056 - sanic.root - INFO - Goin' Fast @ http://0.0.0.0:7071
+2021-10-07 23:34:49,931605 - sanic.root - INFO - Starting worker [64779]
+2021-10-07 23:34:49,931576 - sanic.root - INFO - Starting worker [64780]
+2021-10-07 23:34:57,405669 - sanic.access - INFO - 127.0.0.1:61168 GET http://localhost:7071/v4/answer_details/  200 47 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 ebfe3b3b-c031-45ba-9c57-8c8f302dbc2f
+2021-10-07 23:34:57,539343 - sanic.root - INFO - Handled exception NotFound, for method None
+2021-10-07 23:34:57,544959 - sanic.access - INFO - 127.0.0.1:61168 GET http://localhost:7071/favicon.ico  400 161 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 7fe1fab8-939d-486a-b1c0-5f41c968b5f5
+2021-10-07 23:35:05,870084 - sanic.root - INFO - Handled exception MethodNotSupported, for method None
+2021-10-07 23:35:05,879991 - sanic.access - INFO - 127.0.0.1:61169 GET http://localhost:7071/v4/answer_details/create  400 205 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 0a0c28d6-2f8d-4acf-9ec7-81bd8fbec58e
+2021-10-07 23:35:06,919767 - sanic.root - INFO - Handled exception NotFound, for method None
+2021-10-07 23:35:06,929159 - sanic.access - INFO - 127.0.0.1:61169 GET http://localhost:7071/favicon.ico  400 161 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 9fad06df-1648-4215-ad7d-e3e7d2c0555c
+2021-10-07 23:35:22,926131 - sanic.error - ERROR - Object does not exist
+Traceback (most recent call last):
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/sanic/app.py", line 770, in handle_request
+    response = await response
+  File "/Users/vivek/Desktop/sanic_3/app/routes/answer_details.py", line 18, in show_answer_by_id
+    _response = await AnswerManager.get_answer_by_id(request, id)
+  File "/Users/vivek/Desktop/sanic_3/app/managers/answer_manager.py", line 20, in get_answer_by_id
+    answers = await Answers.get(id=answer_id)
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/tortoise/queryset.py", line 920, in _execute
+    raise DoesNotExist("Object does not exist")
+tortoise.exceptions.DoesNotExist: Object does not exist
+2021-10-07 23:35:22,946109 - sanic.access - INFO - 127.0.0.1:61190 GET http://localhost:7071/v4/answer_details/22  500 127 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 b289205c-dc76-4001-9f36-5f3c7062edd6
+2021-10-07 23:35:23,700257 - sanic.root - INFO - Handled exception NotFound, for method None
+2021-10-07 23:35:23,707791 - sanic.access - INFO - 127.0.0.1:61190 GET http://localhost:7071/favicon.ico  400 161 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 96b9e822-8072-4c8c-92a5-b346be0243be
+2021-10-07 23:35:49,409935 - sanic.root - INFO - Received signal SIGINT. Shutting down.
+2021-10-07 23:35:49,413168 - sanic.root - INFO - Stopping worker [64779]
+2021-10-07 23:35:49,415076 - sanic.root - INFO - Stopping worker [64780]
+2021-10-07 23:36:04,425132 - sanic.root - INFO - Received signal SIGINT. Shutting down.
+2021-10-07 23:36:04,426511 - sanic.root - INFO - Server Stopped
+2021-10-07 23:36:04,785557 - sanic.root - INFO - Handled exception ServiceUnavailable, for method None
+2021-10-07 23:36:04,789458 - sanic.error - ERROR - protocol.connection_task uncaught
+Traceback (most recent call last):
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/sanic/http.py", line 130, in http1
+    await self.http1_request_header()
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/sanic/http.py", line 203, in http1_request_header
+    await self._receive_more()
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/sanic/server.py", line 222, in receive_more
+    await self._data_received.wait()
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/asyncio/locks.py", line 309, in wait
+    await fut
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/sanic/server.py", line 197, in connection_task
+    await self._http.http1()
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/sanic/http.py", line 146, in http1
+    await self.error_response(e)
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/sanic/http.py", line 420, in error_response
+    await app.handle_exception(self.request, exception)
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/sanic/app.py", line 704, in handle_exception
+    await response.send(end_stream=True)
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/sanic/response.py", line 122, in send
+    await self.stream.send(data, end_stream=end_stream)
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/sanic/http.py", line 348, in http1_response_header
+    self.log_response()
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/sanic/http.py", line 457, in log_response
+    extra["request"] = f"{req.method} {req.url}"
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/sanic/request.py", line 669, in url
+    (self.scheme, self.host, self.path, None, self.query_string, None)
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/sanic/request.py", line 596, in scheme
+    if self.transport.get_extra_info("sslcontext"):
+AttributeError: 'NoneType' object has no attribute 'get_extra_info'
+2021-10-07 23:36:09,332548 - sanic.root - INFO - ping
+2021-10-07 23:36:09,332722 - sanic.root - INFO - v4/user_details/add-user
+2021-10-07 23:36:09,332835 - sanic.root - INFO - v4/user_details/login
+2021-10-07 23:36:09,332938 - sanic.root - INFO - v4/question_details/create
+2021-10-07 23:36:09,333031 - sanic.root - INFO - v4/question_details
+2021-10-07 23:36:09,333103 - sanic.root - INFO - v4/answer_details/create
+2021-10-07 23:36:09,333174 - sanic.root - INFO - v4/answer_details
+2021-10-07 23:36:09,333244 - sanic.root - INFO - v4/comment_details
+2021-10-07 23:36:09,333315 - sanic.root - INFO - v4/comment_details/create
+2021-10-07 23:36:09,333401 - sanic.root - INFO - v4/rating_details/create
+2021-10-07 23:36:09,333470 - sanic.root - INFO - v4/rating_details
+2021-10-07 23:36:09,333534 - sanic.root - INFO - v4/so_basictest
+2021-10-07 23:36:09,333597 - sanic.root - INFO - v4/question_details/<id:int>
+2021-10-07 23:36:09,333698 - sanic.root - INFO - v4/answer_details/<id:int>
+2021-10-07 23:36:09,333812 - sanic.root - INFO - v4/comment_details/<id:int>
+2021-10-07 23:36:09,333895 - sanic.root - INFO - v4/rating_details/<id:int>
+2021-10-07 23:36:09,334076 - sanic.root - INFO - Goin' Fast @ http://0.0.0.0:7071
+2021-10-07 23:36:09,391707 - sanic.root - INFO - Starting worker [64843]
+2021-10-07 23:36:09,391848 - sanic.root - INFO - Starting worker [64844]
+2021-10-07 23:36:22,788524 - sanic.error - ERROR - get_question_by_id() missing 1 required positional argument: 'question_id'
+Traceback (most recent call last):
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/sanic/app.py", line 770, in handle_request
+    response = await response
+  File "/Users/vivek/Desktop/sanic_3/app/routes/answer_details.py", line 25, in create_answer
+    _response = await AnswerManager.create_answer(request)
+  File "/Users/vivek/Desktop/sanic_3/app/managers/answer_manager.py", line 26, in create_answer
+    question_id = await QuestionManager.get_question_by_id({"question_text": "how is python?"})
+TypeError: get_question_by_id() missing 1 required positional argument: 'question_id'
+2021-10-07 23:36:22,802928 - sanic.access - INFO - 127.0.0.1:61280 GET http://localhost:7071/v4/answer_details/create  500 127 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 a11fa566-e0fe-415b-8bdd-608cf3c06d60
+2021-10-07 23:36:22,850153 - sanic.root - INFO - Handled exception NotFound, for method None
+2021-10-07 23:36:22,857544 - sanic.access - INFO - 127.0.0.1:61280 GET http://localhost:7071/favicon.ico  400 161 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 205ee3dd-a0da-4536-afbb-2dc2689c8530
+2021-10-07 23:37:21,085151 - sanic.root - INFO - Handled exception RequestTimeout, for method None
+2021-10-07 23:37:21,096591 - sanic.access - INFO - UNKNOWN NONE http:///*  408 117 None 1f3ba88c-a4e9-4065-ab36-da58d601d589
+2021-10-07 23:39:38,044149 - sanic.root - INFO - Received signal SIGINT. Shutting down.
+2021-10-07 23:39:38,047324 - sanic.root - INFO - Stopping worker [64844]
+2021-10-07 23:39:38,048246 - sanic.root - INFO - Stopping worker [64843]
+2021-10-07 23:39:38,066520 - sanic.root - INFO - Server Stopped
+2021-10-07 23:39:42,371132 - sanic.root - INFO - ping
+2021-10-07 23:39:42,371300 - sanic.root - INFO - v4/user_details/add-user
+2021-10-07 23:39:42,371406 - sanic.root - INFO - v4/user_details/login
+2021-10-07 23:39:42,371512 - sanic.root - INFO - v4/question_details/create
+2021-10-07 23:39:42,371608 - sanic.root - INFO - v4/question_details
+2021-10-07 23:39:42,371686 - sanic.root - INFO - v4/answer_details
+2021-10-07 23:39:42,371757 - sanic.root - INFO - v4/answer_details/create
+2021-10-07 23:39:42,371826 - sanic.root - INFO - v4/comment_details
+2021-10-07 23:39:42,371894 - sanic.root - INFO - v4/comment_details/create
+2021-10-07 23:39:42,371960 - sanic.root - INFO - v4/rating_details/create
+2021-10-07 23:39:42,372026 - sanic.root - INFO - v4/rating_details
+2021-10-07 23:39:42,372094 - sanic.root - INFO - v4/so_basictest
+2021-10-07 23:39:42,372160 - sanic.root - INFO - v4/question_details/<id:int>
+2021-10-07 23:39:42,372226 - sanic.root - INFO - v4/answer_details/<id:int>
+2021-10-07 23:39:42,372292 - sanic.root - INFO - v4/comment_details/<id:int>
+2021-10-07 23:39:42,372386 - sanic.root - INFO - v4/rating_details/<id:int>
+2021-10-07 23:39:42,372630 - sanic.root - INFO - Goin' Fast @ http://0.0.0.0:7071
+2021-10-07 23:39:42,442905 - sanic.root - INFO - Starting worker [64977]
+2021-10-07 23:39:42,442852 - sanic.root - INFO - Starting worker [64976]
+2021-10-07 23:39:47,574390 - sanic.error - ERROR - get_question_by_id() missing 1 required positional argument: 'question_id'
+Traceback (most recent call last):
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/sanic/app.py", line 770, in handle_request
+    response = await response
+  File "/Users/vivek/Desktop/sanic_3/app/routes/answer_details.py", line 25, in create_answer
+    payload = await AnswerManager.create_answer(request)
+  File "/Users/vivek/Desktop/sanic_3/app/managers/answer_manager.py", line 26, in create_answer
+    question_id = await QuestionManager.get_question_by_id({"question_text": "how is python?"})
+TypeError: get_question_by_id() missing 1 required positional argument: 'question_id'
+2021-10-07 23:39:47,591373 - sanic.access - INFO - 127.0.0.1:61506 GET http://localhost:7071/v4/answer_details/create  500 127 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 83bc82fc-1a5a-4b2d-b052-dcb7ecfc22c5
+2021-10-07 23:39:47,686267 - sanic.root - INFO - Handled exception NotFound, for method None
+2021-10-07 23:39:47,692433 - sanic.access - INFO - 127.0.0.1:61506 GET http://localhost:7071/favicon.ico  400 161 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 2660c5f3-45e7-4def-b758-661918120d83
+2021-10-07 23:40:47,581798 - sanic.root - INFO - Handled exception RequestTimeout, for method None
+2021-10-07 23:40:47,592840 - sanic.access - INFO - UNKNOWN NONE http:///*  408 117 None 49514180-e41a-4bec-9f50-2bd7c2ba9a22
+2021-10-08 10:36:53,018654 - sanic.root - INFO - Received signal SIGINT. Shutting down.
+2021-10-08 10:36:53,041541 - sanic.root - INFO - Stopping worker [64976]
+2021-10-08 10:36:53,041763 - sanic.root - INFO - Stopping worker [64977]
+2021-10-08 10:36:53,077298 - sanic.root - INFO - Server Stopped
+2021-10-08 10:36:57,193183 - sanic.root - INFO - ping
+2021-10-08 10:36:57,193690 - sanic.root - INFO - v4/user_details/login
+2021-10-08 10:36:57,193872 - sanic.root - INFO - v4/user_details/add-user
+2021-10-08 10:36:57,193986 - sanic.root - INFO - v4/question_details/create
+2021-10-08 10:36:57,194079 - sanic.root - INFO - v4/question_details
+2021-10-08 10:36:57,194170 - sanic.root - INFO - v4/answer_details
+2021-10-08 10:36:57,194258 - sanic.root - INFO - v4/answer_details/create
+2021-10-08 10:36:57,194349 - sanic.root - INFO - v4/comment_details/create
+2021-10-08 10:36:57,194434 - sanic.root - INFO - v4/comment_details
+2021-10-08 10:36:57,194937 - sanic.root - INFO - v4/rating_details/create
+2021-10-08 10:36:57,195986 - sanic.root - INFO - v4/rating_details
+2021-10-08 10:36:57,196132 - sanic.root - INFO - v4/so_basictest
+2021-10-08 10:36:57,196214 - sanic.root - INFO - v4/question_details/<id:int>
+2021-10-08 10:36:57,196299 - sanic.root - INFO - v4/answer_details/<id:int>
+2021-10-08 10:36:57,196944 - sanic.root - INFO - v4/comment_details/<id:int>
+2021-10-08 10:36:57,197108 - sanic.root - INFO - v4/rating_details/<id:int>
+2021-10-08 10:36:57,197310 - sanic.root - INFO - Goin' Fast @ http://0.0.0.0:7071
+2021-10-08 10:36:57,677509 - sanic.root - INFO - Server Stopped
+2021-10-08 10:37:03,457514 - sanic.root - INFO - ping
+2021-10-08 10:37:03,457701 - sanic.root - INFO - v4/user_details/add-user
+2021-10-08 10:37:03,457810 - sanic.root - INFO - v4/user_details/login
+2021-10-08 10:37:03,457909 - sanic.root - INFO - v4/question_details
+2021-10-08 10:37:03,458016 - sanic.root - INFO - v4/question_details/create
+2021-10-08 10:37:03,458090 - sanic.root - INFO - v4/answer_details/create
+2021-10-08 10:37:03,458159 - sanic.root - INFO - v4/answer_details
+2021-10-08 10:37:03,458227 - sanic.root - INFO - v4/comment_details
+2021-10-08 10:37:03,458294 - sanic.root - INFO - v4/comment_details/create
+2021-10-08 10:37:03,458360 - sanic.root - INFO - v4/rating_details/create
+2021-10-08 10:37:03,458425 - sanic.root - INFO - v4/rating_details
+2021-10-08 10:37:03,458491 - sanic.root - INFO - v4/so_basictest
+2021-10-08 10:37:03,458557 - sanic.root - INFO - v4/question_details/<id:int>
+2021-10-08 10:37:03,458622 - sanic.root - INFO - v4/answer_details/<id:int>
+2021-10-08 10:37:03,458733 - sanic.root - INFO - v4/comment_details/<id:int>
+2021-10-08 10:37:03,458832 - sanic.root - INFO - v4/rating_details/<id:int>
+2021-10-08 10:37:03,459028 - sanic.root - INFO - Goin' Fast @ http://0.0.0.0:7071
+2021-10-08 10:37:03,532890 - sanic.root - INFO - Starting worker [65999]
+2021-10-08 10:37:03,532890 - sanic.root - INFO - Starting worker [66000]
+2021-10-08 10:37:29,292704 - sanic.error - ERROR - get_question_by_id() missing 1 required positional argument: 'question_id'
+Traceback (most recent call last):
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/sanic/app.py", line 770, in handle_request
+    response = await response
+  File "/Users/vivek/Desktop/sanic_3/app/routes/answer_details.py", line 25, in create_answer
+    _response = await AnswerManager.create_answer(request)
+  File "/Users/vivek/Desktop/sanic_3/app/managers/answer_manager.py", line 27, in create_answer
+    question_id = await QuestionManager.get_question_by_id({"id": 22})
+TypeError: get_question_by_id() missing 1 required positional argument: 'question_id'
+2021-10-08 10:37:29,306104 - sanic.access - INFO - 127.0.0.1:63259 GET http://localhost:7071/v4/answer_details/create  500 127 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 db5ed28b-9fde-4a32-a3c5-d3064606c5be
+2021-10-08 10:37:29,344416 - sanic.root - INFO - Handled exception NotFound, for method None
+2021-10-08 10:37:29,348490 - sanic.access - INFO - 127.0.0.1:63259 GET http://localhost:7071/favicon.ico  400 161 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 be0ad7e9-14d1-4ec9-9952-d441e84aacc5
+2021-10-08 10:38:29,211443 - sanic.root - INFO - Handled exception RequestTimeout, for method None
+2021-10-08 10:38:29,221062 - sanic.access - INFO - UNKNOWN NONE http:///*  408 117 None b77614c3-3cf3-4312-a911-f13c2a78d051
+2021-10-08 10:40:10,889202 - sanic.root - INFO - Received signal SIGINT. Shutting down.
+2021-10-08 10:40:10,893029 - sanic.root - INFO - Stopping worker [65999]
+2021-10-08 10:40:10,893496 - sanic.root - INFO - Stopping worker [66000]
+2021-10-08 10:40:10,907490 - sanic.root - INFO - Server Stopped
+2021-10-08 10:40:13,534279 - sanic.root - INFO - ping
+2021-10-08 10:40:13,534450 - sanic.root - INFO - v4/user_details/add-user
+2021-10-08 10:40:13,534559 - sanic.root - INFO - v4/user_details/login
+2021-10-08 10:40:13,534669 - sanic.root - INFO - v4/question_details
+2021-10-08 10:40:13,534755 - sanic.root - INFO - v4/question_details/create
+2021-10-08 10:40:13,534824 - sanic.root - INFO - v4/answer_details/create
+2021-10-08 10:40:13,534891 - sanic.root - INFO - v4/answer_details
+2021-10-08 10:40:13,534958 - sanic.root - INFO - v4/comment_details/create
+2021-10-08 10:40:13,535024 - sanic.root - INFO - v4/comment_details
+2021-10-08 10:40:13,535088 - sanic.root - INFO - v4/rating_details/create
+2021-10-08 10:40:13,535153 - sanic.root - INFO - v4/rating_details
+2021-10-08 10:40:13,535220 - sanic.root - INFO - v4/so_basictest
+2021-10-08 10:40:13,535285 - sanic.root - INFO - v4/question_details/<id:int>
+2021-10-08 10:40:13,535350 - sanic.root - INFO - v4/answer_details/<id:int>
+2021-10-08 10:40:13,535416 - sanic.root - INFO - v4/comment_details/<id:int>
+2021-10-08 10:40:13,535519 - sanic.root - INFO - v4/rating_details/<id:int>
+2021-10-08 10:40:13,535730 - sanic.root - INFO - Goin' Fast @ http://0.0.0.0:7071
+2021-10-08 10:40:13,578623 - sanic.root - INFO - Starting worker [66079]
+2021-10-08 10:40:13,578855 - sanic.root - INFO - Starting worker [66080]
+2021-10-08 10:40:26,351708 - sanic.error - ERROR - 'function' object has no attribute 'dumps'
+Traceback (most recent call last):
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/sanic/app.py", line 770, in handle_request
+    response = await response
+  File "/Users/vivek/Desktop/sanic_3/app/routes/answer_details.py", line 26, in create_answer
+    return send_response({"message": json.dumps(
+AttributeError: 'function' object has no attribute 'dumps'
+2021-10-08 10:40:26,356924 - sanic.access - INFO - 127.0.0.1:63454 GET http://localhost:7071/v4/answer_details/create  500 127 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 6d4e31f0-9ca0-4848-98ed-b8f1f72fac66
+2021-10-08 10:40:26,388659 - sanic.root - INFO - Handled exception NotFound, for method None
+2021-10-08 10:40:26,393734 - sanic.access - INFO - 127.0.0.1:63454 GET http://localhost:7071/favicon.ico  400 161 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 a92ef71e-a230-4b4b-b35b-39e29a05da21
+2021-10-08 10:40:27,092234 - sanic.error - ERROR - 'function' object has no attribute 'dumps'
+Traceback (most recent call last):
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/sanic/app.py", line 770, in handle_request
+    response = await response
+  File "/Users/vivek/Desktop/sanic_3/app/routes/answer_details.py", line 26, in create_answer
+    return send_response({"message": json.dumps(
+AttributeError: 'function' object has no attribute 'dumps'
+2021-10-08 10:40:27,094610 - sanic.access - INFO - 127.0.0.1:63454 GET http://localhost:7071/v4/answer_details/create  500 127 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 c8fcb53c-3592-4172-b678-b2ecd8d40ff2
+2021-10-08 10:40:27,123872 - sanic.root - INFO - Handled exception NotFound, for method None
+2021-10-08 10:40:27,127877 - sanic.access - INFO - 127.0.0.1:63454 GET http://localhost:7071/favicon.ico  400 161 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 24abcb38-f895-4539-af53-88a8132e086c
+2021-10-08 10:40:27,276682 - sanic.error - ERROR - 'function' object has no attribute 'dumps'
+Traceback (most recent call last):
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/sanic/app.py", line 770, in handle_request
+    response = await response
+  File "/Users/vivek/Desktop/sanic_3/app/routes/answer_details.py", line 26, in create_answer
+    return send_response({"message": json.dumps(
+AttributeError: 'function' object has no attribute 'dumps'
+2021-10-08 10:40:27,279679 - sanic.access - INFO - 127.0.0.1:63454 GET http://localhost:7071/v4/answer_details/create  500 127 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 8fdf2072-5735-4247-80af-fde6bc11cccd
+2021-10-08 10:40:27,309267 - sanic.root - INFO - Handled exception NotFound, for method None
+2021-10-08 10:40:27,314512 - sanic.access - INFO - 127.0.0.1:63454 GET http://localhost:7071/favicon.ico  400 161 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 f2a32360-ccb4-48f6-991d-2dc5d6c2003e
+2021-10-08 10:40:27,514333 - sanic.error - ERROR - 'function' object has no attribute 'dumps'
+Traceback (most recent call last):
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/sanic/app.py", line 770, in handle_request
+    response = await response
+  File "/Users/vivek/Desktop/sanic_3/app/routes/answer_details.py", line 26, in create_answer
+    return send_response({"message": json.dumps(
+AttributeError: 'function' object has no attribute 'dumps'
+2021-10-08 10:40:27,516696 - sanic.access - INFO - 127.0.0.1:63454 GET http://localhost:7071/v4/answer_details/create  500 127 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 30f64e77-1b06-4a5d-bb73-865390f6ef56
+2021-10-08 10:40:27,547523 - sanic.root - INFO - Handled exception NotFound, for method None
+2021-10-08 10:40:27,552219 - sanic.access - INFO - 127.0.0.1:63454 GET http://localhost:7071/favicon.ico  400 161 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 6bced223-b789-4b19-9006-8d6738fc26f1
+2021-10-08 10:40:27,685308 - sanic.error - ERROR - 'function' object has no attribute 'dumps'
+Traceback (most recent call last):
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/sanic/app.py", line 770, in handle_request
+    response = await response
+  File "/Users/vivek/Desktop/sanic_3/app/routes/answer_details.py", line 26, in create_answer
+    return send_response({"message": json.dumps(
+AttributeError: 'function' object has no attribute 'dumps'
+2021-10-08 10:40:27,687490 - sanic.access - INFO - 127.0.0.1:63454 GET http://localhost:7071/v4/answer_details/create  500 127 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 33f44c41-957b-41a1-a120-61f48f9f15d5
+2021-10-08 10:40:27,714583 - sanic.root - INFO - Handled exception NotFound, for method None
+2021-10-08 10:40:27,719795 - sanic.access - INFO - 127.0.0.1:63454 GET http://localhost:7071/favicon.ico  400 161 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 2edfa8f7-526a-4acb-84b7-7187b2736bb6
+2021-10-08 10:41:26,327883 - sanic.root - INFO - Handled exception RequestTimeout, for method None
+2021-10-08 10:41:26,336884 - sanic.access - INFO - UNKNOWN NONE http:///*  408 117 None 67471caf-0706-4769-b1b2-ff11e7514942
+2021-10-08 10:42:07,884559 - sanic.error - ERROR - <Answers: 5> is not JSON serializable
+Traceback (most recent call last):
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/sanic/app.py", line 770, in handle_request
+    response = await response
+  File "/Users/vivek/Desktop/sanic_3/app/routes/answer_details.py", line 13, in show_answer
+    return send_response(_response)
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/torpedo/handlers.py", line 30, in send_response
+    return json(body=data, status=status_code)
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/sanic/response.py", line 286, in json
+    dumps(body, **kwargs),
+TypeError: <Answers: 5> is not JSON serializable
+2021-10-08 10:42:07,895571 - sanic.access - INFO - 127.0.0.1:63570 GET http://localhost:7071/v4/answer_details/  500 127 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 98cbcaff-01f2-4cc9-b460-45fbaedc671f
+2021-10-08 10:42:07,947498 - sanic.root - INFO - Handled exception NotFound, for method None
+2021-10-08 10:42:07,953260 - sanic.access - INFO - 127.0.0.1:63570 GET http://localhost:7071/favicon.ico  400 161 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 17f17bd6-e133-4685-8e5c-99d3314ef486
+2021-10-08 10:42:15,406221 - sanic.error - ERROR - Object does not exist
+Traceback (most recent call last):
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/sanic/app.py", line 770, in handle_request
+    response = await response
+  File "/Users/vivek/Desktop/sanic_3/app/routes/answer_details.py", line 18, in show_answer_by_id
+    _response = await AnswerManager.get_answer_by_id(request, id)
+  File "/Users/vivek/Desktop/sanic_3/app/managers/answer_manager.py", line 20, in get_answer_by_id
+    answers = await Answers.get(id=answer_id)
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/tortoise/queryset.py", line 920, in _execute
+    raise DoesNotExist("Object does not exist")
+tortoise.exceptions.DoesNotExist: Object does not exist
+2021-10-08 10:42:15,414466 - sanic.access - INFO - 127.0.0.1:63572 GET http://localhost:7071/v4/answer_details/22  500 127 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 b9b6c476-9ca9-4da0-bd47-599c41141998
+2021-10-08 10:42:16,140651 - sanic.root - INFO - Handled exception NotFound, for method None
+2021-10-08 10:42:16,148053 - sanic.access - INFO - 127.0.0.1:63572 GET http://localhost:7071/favicon.ico  400 161 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 9f1e1f83-5600-4e5a-a432-c441bff3c57d
+2021-10-08 10:42:24,461125 - sanic.error - ERROR - <Answers: 5> is not JSON serializable
+Traceback (most recent call last):
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/sanic/app.py", line 770, in handle_request
+    response = await response
+  File "/Users/vivek/Desktop/sanic_3/app/routes/answer_details.py", line 13, in show_answer
+    return send_response(_response)
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/torpedo/handlers.py", line 30, in send_response
+    return json(body=data, status=status_code)
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/sanic/response.py", line 286, in json
+    dumps(body, **kwargs),
+TypeError: <Answers: 5> is not JSON serializable
+2021-10-08 10:42:24,468994 - sanic.access - INFO - 127.0.0.1:63574 GET http://localhost:7071/v4/answer_details/  500 127 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 aa3e7695-5ce3-4b1f-b17b-0e0ee6a7dbb8
+2021-10-08 10:42:24,507987 - sanic.root - INFO - Handled exception NotFound, for method None
+2021-10-08 10:42:24,514278 - sanic.access - INFO - 127.0.0.1:63574 GET http://localhost:7071/favicon.ico  400 161 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 92c23483-8e6e-4f59-9b47-983bbf70a46b
+2021-10-08 10:43:24,478179 - sanic.root - INFO - Handled exception RequestTimeout, for method None
+2021-10-08 10:43:24,482055 - sanic.access - INFO - UNKNOWN NONE http:///*  408 117 None 9fcf5acb-521f-436d-bb5e-7b4ed2401fa2
+2021-10-08 10:43:50,383048 - sanic.root - INFO - Received signal SIGINT. Shutting down.
+2021-10-08 10:43:50,385476 - sanic.root - INFO - Stopping worker [66079]
+2021-10-08 10:43:50,386672 - sanic.root - INFO - Stopping worker [66080]
+2021-10-08 10:43:50,405472 - sanic.root - INFO - Server Stopped
+2021-10-08 10:44:19,188738 - sanic.root - INFO - ping
+2021-10-08 10:44:19,188925 - sanic.root - INFO - v4/user_details/add-user
+2021-10-08 10:44:19,189034 - sanic.root - INFO - v4/user_details/login
+2021-10-08 10:44:19,189137 - sanic.root - INFO - v4/question_details/create
+2021-10-08 10:44:19,189233 - sanic.root - INFO - v4/question_details
+2021-10-08 10:44:19,189309 - sanic.root - INFO - v4/answer_details
+2021-10-08 10:44:19,189375 - sanic.root - INFO - v4/answer_details/create
+2021-10-08 10:44:19,189442 - sanic.root - INFO - v4/comment_details/create
+2021-10-08 10:44:19,189508 - sanic.root - INFO - v4/comment_details
+2021-10-08 10:44:19,189573 - sanic.root - INFO - v4/rating_details
+2021-10-08 10:44:19,189636 - sanic.root - INFO - v4/rating_details/create
+2021-10-08 10:44:19,189700 - sanic.root - INFO - v4/so_basictest
+2021-10-08 10:44:19,189764 - sanic.root - INFO - v4/question_details/<id:int>
+2021-10-08 10:44:19,189828 - sanic.root - INFO - v4/answer_details/<id:int>
+2021-10-08 10:44:19,189905 - sanic.root - INFO - v4/comment_details/<id:int>
+2021-10-08 10:44:19,190013 - sanic.root - INFO - v4/rating_details/<id:int>
+2021-10-08 10:44:19,190220 - sanic.root - INFO - Goin' Fast @ http://0.0.0.0:7071
+2021-10-08 10:44:19,235114 - sanic.root - INFO - Starting worker [66217]
+2021-10-08 10:44:19,235094 - sanic.root - INFO - Starting worker [66218]
+2021-10-08 10:44:22,691265 - sanic.error - ERROR - 'function' object has no attribute 'dumps'
+Traceback (most recent call last):
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/sanic/app.py", line 770, in handle_request
+    response = await response
+  File "/Users/vivek/Desktop/sanic_3/app/routes/answer_details.py", line 13, in show_answer
+    return send_response({'message': json.dumps(
+AttributeError: 'function' object has no attribute 'dumps'
+2021-10-08 10:44:22,700333 - sanic.access - INFO - 127.0.0.1:63691 GET http://localhost:7071/v4/answer_details/  500 127 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 d595ea46-30d6-419b-b481-a3675cfd365e
+2021-10-08 10:44:22,969287 - sanic.root - INFO - Handled exception NotFound, for method None
+2021-10-08 10:44:22,974086 - sanic.access - INFO - 127.0.0.1:63691 GET http://localhost:7071/favicon.ico  400 161 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 4f9bd3c8-98a2-4a4f-8454-cec0ae4c1e7f
+2021-10-08 10:45:22,704619 - sanic.root - INFO - Handled exception RequestTimeout, for method None
+2021-10-08 10:45:22,714089 - sanic.access - INFO - UNKNOWN NONE http:///*  408 117 None 168122a7-2009-4f32-8ff0-b85932b1eb3c
+2021-10-08 10:45:32,015051 - sanic.root - INFO - Received signal SIGINT. Shutting down.
+2021-10-08 10:45:32,017548 - sanic.root - INFO - Stopping worker [66217]
+2021-10-08 10:45:32,017815 - sanic.root - INFO - Stopping worker [66218]
+2021-10-08 10:45:32,033265 - sanic.root - INFO - Server Stopped
+2021-10-08 10:45:34,430749 - sanic.root - INFO - ping
+2021-10-08 10:45:34,430926 - sanic.root - INFO - v4/user_details/add-user
+2021-10-08 10:45:34,431036 - sanic.root - INFO - v4/user_details/login
+2021-10-08 10:45:34,431136 - sanic.root - INFO - v4/question_details
+2021-10-08 10:45:34,431229 - sanic.root - INFO - v4/question_details/create
+2021-10-08 10:45:34,431300 - sanic.root - INFO - v4/answer_details/create
+2021-10-08 10:45:34,431370 - sanic.root - INFO - v4/answer_details
+2021-10-08 10:45:34,431438 - sanic.root - INFO - v4/comment_details/create
+2021-10-08 10:45:34,431506 - sanic.root - INFO - v4/comment_details
+2021-10-08 10:45:34,431572 - sanic.root - INFO - v4/rating_details/create
+2021-10-08 10:45:34,431639 - sanic.root - INFO - v4/rating_details
+2021-10-08 10:45:34,431705 - sanic.root - INFO - v4/so_basictest
+2021-10-08 10:45:34,431772 - sanic.root - INFO - v4/question_details/<id:int>
+2021-10-08 10:45:34,431853 - sanic.root - INFO - v4/answer_details/<id:int>
+2021-10-08 10:45:34,431964 - sanic.root - INFO - v4/comment_details/<id:int>
+2021-10-08 10:45:34,432083 - sanic.root - INFO - v4/rating_details/<id:int>
+2021-10-08 10:45:34,432260 - sanic.root - INFO - Goin' Fast @ http://0.0.0.0:7071
+2021-10-08 10:45:34,478518 - sanic.root - INFO - Starting worker [66264]
+2021-10-08 10:45:34,482703 - sanic.root - INFO - Starting worker [66265]
+2021-10-08 10:45:39,703368 - sanic.access - INFO - 127.0.0.1:63782 GET http://localhost:7071/v4/answer_details/  200 162 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 e0a91007-b9f9-45a7-b2af-a1f90653536e
+2021-10-08 10:45:39,738497 - sanic.root - INFO - Handled exception NotFound, for method None
+2021-10-08 10:45:39,742845 - sanic.access - INFO - 127.0.0.1:63782 GET http://localhost:7071/favicon.ico  400 161 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 d524d676-f87e-415c-a890-60e51e9ebf3f
+2021-10-08 10:45:49,800704 - sanic.error - ERROR - Object does not exist
+Traceback (most recent call last):
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/sanic/app.py", line 770, in handle_request
+    response = await response
+  File "/Users/vivek/Desktop/sanic_3/app/routes/answer_details.py", line 19, in show_answer_by_id
+    _response = await AnswerManager.get_answer_by_id(request, id)
+  File "/Users/vivek/Desktop/sanic_3/app/managers/answer_manager.py", line 20, in get_answer_by_id
+    answers = await Answers.get(id=answer_id)
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/tortoise/queryset.py", line 920, in _execute
+    raise DoesNotExist("Object does not exist")
+tortoise.exceptions.DoesNotExist: Object does not exist
+2021-10-08 10:45:49,812856 - sanic.access - INFO - 127.0.0.1:63784 GET http://localhost:7071/v4/answer_details/22  500 127 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 337ad775-4b46-4d88-8749-7d29a09fadc5
+2021-10-08 10:45:49,860009 - sanic.root - INFO - Handled exception NotFound, for method None
+2021-10-08 10:45:49,866284 - sanic.access - INFO - 127.0.0.1:63784 GET http://localhost:7071/favicon.ico  400 161 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 d90b65f3-51e9-4818-a74a-f14f635232e5
+2021-10-08 10:46:39,466672 - sanic.access - INFO - 127.0.0.1:63805 GET http://localhost:7071/v4/answer_details/1  200 72 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 cd24ec21-cb49-400a-a343-255d8f2fd1c0
+2021-10-08 10:46:39,525787 - sanic.root - INFO - Handled exception NotFound, for method None
+2021-10-08 10:46:39,532650 - sanic.access - INFO - 127.0.0.1:63805 GET http://localhost:7071/favicon.ico  400 161 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 9d209861-aebf-4ce3-b262-c4997f0fe24e
+2021-10-08 10:47:39,484016 - sanic.root - INFO - Handled exception RequestTimeout, for method None
+2021-10-08 10:47:39,487142 - sanic.access - INFO - UNKNOWN NONE http:///*  408 117 None 32146eea-dddf-4c65-b7b6-1d9a984c7607
+2021-10-08 11:43:08,429840 - sanic.root - INFO - Received signal SIGINT. Shutting down.
+2021-10-08 11:43:08,432623 - sanic.root - INFO - Stopping worker [66265]
+2021-10-08 11:43:08,432828 - sanic.root - INFO - Stopping worker [66264]
+2021-10-08 11:43:08,444477 - sanic.root - INFO - Server Stopped
+2021-10-08 11:43:16,873772 - sanic.root - INFO - ping
+2021-10-08 11:43:16,873953 - sanic.root - INFO - v4/user_details/login
+2021-10-08 11:43:16,874067 - sanic.root - INFO - v4/user_details/add-user
+2021-10-08 11:43:16,874175 - sanic.root - INFO - v4/question_details
+2021-10-08 11:43:16,874267 - sanic.root - INFO - v4/question_details/create
+2021-10-08 11:43:16,874338 - sanic.root - INFO - v4/answer_details/create
+2021-10-08 11:43:16,874407 - sanic.root - INFO - v4/answer_details
+2021-10-08 11:43:16,874476 - sanic.root - INFO - v4/comment_details
+2021-10-08 11:43:16,874543 - sanic.root - INFO - v4/comment_details/create
+2021-10-08 11:43:16,874608 - sanic.root - INFO - v4/rating_details
+2021-10-08 11:43:16,874672 - sanic.root - INFO - v4/rating_details/create
+2021-10-08 11:43:16,874742 - sanic.root - INFO - v4/so_basictest
+2021-10-08 11:43:16,874808 - sanic.root - INFO - v4/question_details/<id:int>
+2021-10-08 11:43:16,874873 - sanic.root - INFO - v4/answer_details/<id:int>
+2021-10-08 11:43:16,874938 - sanic.root - INFO - v4/comment_details/<id:int>
+2021-10-08 11:43:16,875046 - sanic.root - INFO - v4/rating_details/<id:int>
+2021-10-08 11:43:16,875263 - sanic.root - INFO - Goin' Fast @ http://0.0.0.0:7071
+2021-10-08 11:43:16,936255 - sanic.root - INFO - Starting worker [67192]
+2021-10-08 11:43:16,937323 - sanic.root - INFO - Starting worker [67191]
+2021-10-08 11:43:35,647942 - sanic.error - ERROR - type object 'QuestionManager' has no attribute 'get_question_entity_by_id'
+Traceback (most recent call last):
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/sanic/app.py", line 770, in handle_request
+    response = await response
+  File "/Users/vivek/Desktop/sanic_3/app/routes/comment_details.py", line 28, in create_comment
+    _response = await CommentManager.create_comment(request)
+  File "/Users/vivek/Desktop/sanic_3/app/managers/comment_manager.py", line 33, in create_comment
+    question_entity_id = await QuestionManager.get_question_entity_by_id({"id":22})
+AttributeError: type object 'QuestionManager' has no attribute 'get_question_entity_by_id'
+2021-10-08 11:43:35,664336 - sanic.access - INFO - 127.0.0.1:49158 GET http://localhost:7071/v4/comment_details/create  500 127 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 503eebbc-1bc3-4282-8843-9cef0c7f64f3
+2021-10-08 11:43:35,737482 - sanic.root - INFO - Handled exception NotFound, for method None
+2021-10-08 11:43:35,745998 - sanic.access - INFO - 127.0.0.1:49158 GET http://localhost:7071/favicon.ico  400 161 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 73fc75a4-528f-46f7-aa6a-1b82ef7573a0
+2021-10-08 11:44:35,620499 - sanic.root - INFO - Handled exception RequestTimeout, for method None
+2021-10-08 11:44:35,633657 - sanic.access - INFO - UNKNOWN NONE http:///*  408 117 None 74810a5d-c62a-4685-8427-d51c509196b4
+2021-10-08 11:45:46,443643 - sanic.root - INFO - Received signal SIGINT. Shutting down.
+2021-10-08 11:45:46,446648 - sanic.root - INFO - Stopping worker [67191]
+2021-10-08 11:45:46,446831 - sanic.root - INFO - Stopping worker [67192]
+2021-10-08 11:45:46,461534 - sanic.root - INFO - Server Stopped
+2021-10-08 11:45:50,349678 - sanic.root - INFO - ping
+2021-10-08 11:45:50,349849 - sanic.root - INFO - v4/user_details/add-user
+2021-10-08 11:45:50,349955 - sanic.root - INFO - v4/user_details/login
+2021-10-08 11:45:50,350059 - sanic.root - INFO - v4/question_details/create
+2021-10-08 11:45:50,350146 - sanic.root - INFO - v4/question_details
+2021-10-08 11:45:50,350213 - sanic.root - INFO - v4/answer_details/create
+2021-10-08 11:45:50,350279 - sanic.root - INFO - v4/answer_details
+2021-10-08 11:45:50,350345 - sanic.root - INFO - v4/comment_details/create
+2021-10-08 11:45:50,350411 - sanic.root - INFO - v4/comment_details
+2021-10-08 11:45:50,350473 - sanic.root - INFO - v4/rating_details
+2021-10-08 11:45:50,350536 - sanic.root - INFO - v4/rating_details/create
+2021-10-08 11:45:50,350601 - sanic.root - INFO - v4/so_basictest
+2021-10-08 11:45:50,350664 - sanic.root - INFO - v4/question_details/<id:int>
+2021-10-08 11:45:50,350734 - sanic.root - INFO - v4/answer_details/<id:int>
+2021-10-08 11:45:50,350842 - sanic.root - INFO - v4/comment_details/<id:int>
+2021-10-08 11:45:50,350958 - sanic.root - INFO - v4/rating_details/<id:int>
+2021-10-08 11:45:50,351135 - sanic.root - INFO - Goin' Fast @ http://0.0.0.0:7071
+2021-10-08 11:45:50,500867 - sanic.root - INFO - Starting worker [67272]
+2021-10-08 11:45:50,504680 - sanic.root - INFO - Starting worker [67271]
+2021-10-08 11:45:53,136212 - sanic.error - ERROR - null value in column "entity_type" of relation "comments" violates not-null constraint
+DETAIL:  Failing row contains (1, null, good, 2021-10-08 11:45:53.127582+05:30, 2021-10-08 11:45:53.127605+05:30, 1, 1, 22, 1).
+Traceback (most recent call last):
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/tortoise/backends/asyncpg/client.py", line 36, in translate_exceptions_
+    return await func(self, *args)
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/tortoise/backends/asyncpg/client.py", line 150, in execute_insert
+    return await connection.fetchrow(query, *values)
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/torpedo/clients.py", line 80, in call
+    return await wrapped(*args, **kwargs)
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/asyncpg/connection.py", line 659, in fetchrow
+    data = await self._execute(
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/asyncpg/connection.py", line 1639, in _execute
+    result, _ = await self.__execute(
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/asyncpg/connection.py", line 1664, in __execute
+    return await self._do_execute(
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/asyncpg/connection.py", line 1711, in _do_execute
+    result = await executor(stmt, None)
+  File "asyncpg/protocol/protocol.pyx", line 201, in bind_execute
+asyncpg.exceptions.NotNullViolationError: null value in column "entity_type" of relation "comments" violates not-null constraint
+DETAIL:  Failing row contains (1, null, good, 2021-10-08 11:45:53.127582+05:30, 2021-10-08 11:45:53.127605+05:30, 1, 1, 22, 1).
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/sanic/app.py", line 770, in handle_request
+    response = await response
+  File "/Users/vivek/Desktop/sanic_3/app/routes/comment_details.py", line 28, in create_comment
+    _response = await CommentManager.create_comment(request)
+  File "/Users/vivek/Desktop/sanic_3/app/managers/comment_manager.py", line 37, in create_comment
+    answers = await DB.create_instance(Comments, payload)
+  File "/Users/vivek/Desktop/sanic_3/app/managers/app/db.py", line 11, in create_instance
+    row = await cls.create(model, data)
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/torpedo/wrappers/db_wrapper.py", line 57, in create
+    row = await model.create(**payload)
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/tortoise/models.py", line 1109, in create
+    await instance.save(using_db=db, force_create=True)
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/tortoise/models.py", line 930, in save
+    await executor.execute_insert(self)
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/tortoise/backends/base/executor.py", line 217, in execute_insert
+    insert_result = await self.db.execute_insert(self.insert_query, values)
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/tortoise/backends/asyncpg/client.py", line 40, in translate_exceptions_
+    raise IntegrityError(exc)
+tortoise.exceptions.IntegrityError: null value in column "entity_type" of relation "comments" violates not-null constraint
+DETAIL:  Failing row contains (1, null, good, 2021-10-08 11:45:53.127582+05:30, 2021-10-08 11:45:53.127605+05:30, 1, 1, 22, 1).
+2021-10-08 11:45:53,173872 - sanic.access - INFO - 127.0.0.1:49327 GET http://localhost:7071/v4/comment_details/create  500 127 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 9b3a7c60-f516-4f0c-a43c-25e97eef13b1
+2021-10-08 11:45:53,204622 - sanic.root - INFO - Handled exception NotFound, for method None
+2021-10-08 11:45:53,210946 - sanic.access - INFO - 127.0.0.1:49327 GET http://localhost:7071/favicon.ico  400 161 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 f0c22296-e6f1-48fa-8002-b2d87d8ee973
+2021-10-08 11:46:53,131741 - sanic.root - INFO - Handled exception RequestTimeout, for method None
+2021-10-08 11:46:53,151588 - sanic.access - INFO - UNKNOWN NONE http:///*  408 117 None eb72f502-0ad5-4abb-901a-f03457b17c8a
+2021-10-08 11:48:10,930878 - sanic.root - INFO - Received signal SIGINT. Shutting down.
+2021-10-08 11:48:10,932565 - sanic.root - INFO - Stopping worker [67272]
+2021-10-08 11:48:10,932566 - sanic.root - INFO - Stopping worker [67271]
+2021-10-08 11:48:10,948092 - sanic.root - INFO - Server Stopped
+2021-10-08 11:48:14,793955 - sanic.root - INFO - ping
+2021-10-08 11:48:14,794130 - sanic.root - INFO - v4/user_details/add-user
+2021-10-08 11:48:14,794238 - sanic.root - INFO - v4/user_details/login
+2021-10-08 11:48:14,794349 - sanic.root - INFO - v4/question_details/create
+2021-10-08 11:48:14,794429 - sanic.root - INFO - v4/question_details
+2021-10-08 11:48:14,794498 - sanic.root - INFO - v4/answer_details
+2021-10-08 11:48:14,794566 - sanic.root - INFO - v4/answer_details/create
+2021-10-08 11:48:14,794633 - sanic.root - INFO - v4/comment_details
+2021-10-08 11:48:14,794700 - sanic.root - INFO - v4/comment_details/create
+2021-10-08 11:48:14,794765 - sanic.root - INFO - v4/rating_details
+2021-10-08 11:48:14,794831 - sanic.root - INFO - v4/rating_details/create
+2021-10-08 11:48:14,794897 - sanic.root - INFO - v4/so_basictest
+2021-10-08 11:48:14,794961 - sanic.root - INFO - v4/question_details/<id:int>
+2021-10-08 11:48:14,795052 - sanic.root - INFO - v4/answer_details/<id:int>
+2021-10-08 11:48:14,795153 - sanic.root - INFO - v4/comment_details/<id:int>
+2021-10-08 11:48:14,795266 - sanic.root - INFO - v4/rating_details/<id:int>
+2021-10-08 11:48:14,795528 - sanic.root - INFO - Goin' Fast @ http://0.0.0.0:7071
+2021-10-08 11:48:14,911283 - sanic.root - INFO - Starting worker [67346]
+2021-10-08 11:48:14,911912 - sanic.root - INFO - Starting worker [67345]
+2021-10-08 11:48:20,321882 - sanic.access - INFO - 127.0.0.1:49485 GET http://localhost:7071/v4/comment_details/create  200 73 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 ca4297ce-58c4-4dfa-9ba8-13b549d2651a
+2021-10-08 11:48:20,379124 - sanic.root - INFO - Handled exception NotFound, for method None
+2021-10-08 11:48:20,392017 - sanic.access - INFO - 127.0.0.1:49485 GET http://localhost:7071/favicon.ico  400 161 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 37bd5f09-362e-42f0-a07f-72a139101784
+2021-10-08 11:49:20,314994 - sanic.root - INFO - Handled exception RequestTimeout, for method None
+2021-10-08 11:49:20,323768 - sanic.access - INFO - UNKNOWN NONE http:///*  408 117 None 1ba4f845-d9d7-4d4f-9ae1-d418a61a7d25
+2021-10-08 12:00:21,214420 - sanic.root - INFO - Received signal SIGINT. Shutting down.
+2021-10-08 12:00:21,216525 - sanic.root - INFO - Stopping worker [67346]
+2021-10-08 12:00:21,216813 - sanic.root - INFO - Stopping worker [67345]
+2021-10-08 12:00:21,231218 - sanic.root - INFO - Server Stopped
+2021-10-08 12:11:49,937826 - sanic.root - INFO - ping
+2021-10-08 12:11:49,939240 - sanic.root - INFO - v4/user_details/add-user
+2021-10-08 12:11:49,939435 - sanic.root - INFO - v4/user_details/login
+2021-10-08 12:11:49,939572 - sanic.root - INFO - v4/question_details
+2021-10-08 12:11:49,939680 - sanic.root - INFO - v4/question_details/create
+2021-10-08 12:11:49,939775 - sanic.root - INFO - v4/answer_details/create
+2021-10-08 12:11:49,939869 - sanic.root - INFO - v4/answer_details
+2021-10-08 12:11:49,939961 - sanic.root - INFO - v4/comment_details
+2021-10-08 12:11:49,940050 - sanic.root - INFO - v4/comment_details/create
+2021-10-08 12:11:49,940141 - sanic.root - INFO - v4/rating_details/create
+2021-10-08 12:11:49,940231 - sanic.root - INFO - v4/rating_details
+2021-10-08 12:11:49,940321 - sanic.root - INFO - v4/so_basictest
+2021-10-08 12:11:49,940410 - sanic.root - INFO - v4/question_details/<id:int>
+2021-10-08 12:11:49,940534 - sanic.root - INFO - v4/answer_details/<id:int>
+2021-10-08 12:11:49,940695 - sanic.root - INFO - v4/comment_details/<id:int>
+2021-10-08 12:11:49,940846 - sanic.root - INFO - v4/rating_details/<id:int>
+2021-10-08 12:11:49,941049 - sanic.root - INFO - Goin' Fast @ http://0.0.0.0:7071
+2021-10-08 12:11:50,015399 - sanic.root - INFO - Starting worker [67761]
+2021-10-08 12:11:50,015476 - sanic.root - INFO - Starting worker [67762]
+2021-10-08 12:12:18,837186 - sanic.error - ERROR - 'function' object has no attribute 'dumps'
+Traceback (most recent call last):
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/sanic/app.py", line 770, in handle_request
+    response = await response
+  File "/Users/vivek/Desktop/sanic_3/app/routes/rating_details.py", line 29, in create_rating
+    return send_response({"message": json.dumps(
+AttributeError: 'function' object has no attribute 'dumps'
+2021-10-08 12:12:18,848700 - sanic.access - INFO - 127.0.0.1:50077 GET http://localhost:7071/v4/rating_details/create  500 127 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 36b4c9bf-e56d-4819-aaa2-eb89de67d96b
+2021-10-08 12:12:18,897412 - sanic.root - INFO - Handled exception NotFound, for method None
+2021-10-08 12:12:18,908380 - sanic.access - INFO - 127.0.0.1:50077 GET http://localhost:7071/favicon.ico  400 161 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 00cb3491-e18a-45c5-a05b-3becf67b1fb6
+2021-10-08 12:13:18,743757 - sanic.root - INFO - Handled exception RequestTimeout, for method None
+2021-10-08 12:13:18,752805 - sanic.access - INFO - UNKNOWN NONE http:///*  408 117 None 70e0c14d-3b69-4a88-b638-d4d8fb857afe
+2021-10-08 12:18:52,927457 - sanic.error - ERROR - 'function' object has no attribute 'dumps'
+Traceback (most recent call last):
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/sanic/app.py", line 770, in handle_request
+    response = await response
+  File "/Users/vivek/Desktop/sanic_3/app/routes/rating_details.py", line 29, in create_rating
+    return send_response({"message": json.dumps(
+AttributeError: 'function' object has no attribute 'dumps'
+2021-10-08 12:18:52,932375 - sanic.access - INFO - 127.0.0.1:50393 GET http://localhost:7071/v4/rating_details/create  500 127 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 202fba94-3203-4b7e-a55f-54a572be3472
+2021-10-08 12:18:52,989415 - sanic.root - INFO - Handled exception NotFound, for method None
+2021-10-08 12:18:52,995631 - sanic.access - INFO - 127.0.0.1:50393 GET http://localhost:7071/favicon.ico  400 161 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 f345aff7-a825-406c-b77f-2896ccd2866c
+2021-10-08 12:19:13,932054 - sanic.error - ERROR - 'function' object has no attribute 'dumps'
+Traceback (most recent call last):
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/sanic/app.py", line 770, in handle_request
+    response = await response
+  File "/Users/vivek/Desktop/sanic_3/app/routes/rating_details.py", line 22, in show_rating_by_id
+    return send_response({'message': json.dumps(
+AttributeError: 'function' object has no attribute 'dumps'
+2021-10-08 12:19:13,939998 - sanic.access - INFO - 127.0.0.1:50394 GET http://localhost:7071/v4/rating_details/1  500 127 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 cc72734b-0994-4b9d-a4e6-44ffb46bea0b
+2021-10-08 12:19:13,982940 - sanic.root - INFO - Handled exception NotFound, for method None
+2021-10-08 12:19:13,990655 - sanic.access - INFO - 127.0.0.1:50394 GET http://localhost:7071/favicon.ico  400 161 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 bbbaa391-9b8f-47f4-93ac-7ae722661f3d
+2021-10-08 12:20:13,957699 - sanic.root - INFO - Handled exception RequestTimeout, for method None
+2021-10-08 12:20:13,961655 - sanic.access - INFO - UNKNOWN NONE http:///*  408 117 None df481e8d-a482-41ce-8e76-49e71b4cd00e
+2021-10-08 12:20:50,550046 - sanic.root - INFO - Received signal SIGINT. Shutting down.
+2021-10-08 12:20:50,553889 - sanic.root - INFO - Stopping worker [67761]
+2021-10-08 12:20:50,555432 - sanic.root - INFO - Stopping worker [67762]
+2021-10-08 12:20:50,573443 - sanic.root - INFO - Server Stopped
+2021-10-08 12:21:09,665488 - sanic.root - INFO - ping
+2021-10-08 12:21:09,668816 - sanic.root - INFO - v4/user_details/login
+2021-10-08 12:21:09,674522 - sanic.root - INFO - v4/user_details/add-user
+2021-10-08 12:21:09,677290 - sanic.root - INFO - v4/question_details
+2021-10-08 12:21:09,677508 - sanic.root - INFO - v4/question_details/create
+2021-10-08 12:21:09,677852 - sanic.root - INFO - v4/answer_details/create
+2021-10-08 12:21:09,680077 - sanic.root - INFO - v4/answer_details
+2021-10-08 12:21:09,680301 - sanic.root - INFO - v4/comment_details/create
+2021-10-08 12:21:09,681779 - sanic.root - INFO - v4/comment_details
+2021-10-08 12:21:09,682288 - sanic.root - INFO - v4/rating_details/create
+2021-10-08 12:21:09,683874 - sanic.root - INFO - v4/rating_details
+2021-10-08 12:21:09,684208 - sanic.root - INFO - v4/so_basictest
+2021-10-08 12:21:09,685428 - sanic.root - INFO - v4/question_details/<id:int>
+2021-10-08 12:21:09,686458 - sanic.root - INFO - v4/answer_details/<id:int>
+2021-10-08 12:21:09,686758 - sanic.root - INFO - v4/comment_details/<id:int>
+2021-10-08 12:21:09,688239 - sanic.root - INFO - v4/rating_details/<id:int>
+2021-10-08 12:21:09,689659 - sanic.root - INFO - Goin' Fast @ http://0.0.0.0:7071
+2021-10-08 12:21:09,752275 - sanic.root - INFO - Starting worker [68006]
+2021-10-08 12:21:09,752296 - sanic.root - INFO - Starting worker [68007]
+2021-10-08 12:21:13,042887 - sanic.error - ERROR - 'function' object has no attribute 'dumps'
+Traceback (most recent call last):
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/sanic/app.py", line 770, in handle_request
+    response = await response
+  File "/Users/vivek/Desktop/sanic_3/app/routes/rating_details.py", line 23, in show_rating_by_id
+    return send_response({'message': json.dumps(
+AttributeError: 'function' object has no attribute 'dumps'
+2021-10-08 12:21:13,055211 - sanic.access - INFO - 127.0.0.1:50503 GET http://localhost:7071/v4/rating_details/1  500 127 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 1579b945-71ae-4a37-93ab-8a693a8d7e3b
+2021-10-08 12:21:13,365125 - sanic.root - INFO - Handled exception NotFound, for method None
+2021-10-08 12:21:13,368859 - sanic.access - INFO - 127.0.0.1:50503 GET http://localhost:7071/favicon.ico  400 161 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 f07b1ae8-3fd5-4f0b-9cb8-c6044116cce8
+2021-10-08 12:21:19,765842 - sanic.error - ERROR - 'function' object has no attribute 'dumps'
+Traceback (most recent call last):
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/sanic/app.py", line 770, in handle_request
+    response = await response
+  File "/Users/vivek/Desktop/sanic_3/app/routes/rating_details.py", line 16, in show_rating
+    return send_response({'message': json.dumps(
+AttributeError: 'function' object has no attribute 'dumps'
+2021-10-08 12:21:19,770926 - sanic.access - INFO - 127.0.0.1:50503 GET http://localhost:7071/v4/rating_details/  500 127 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 2e8869ee-ff4a-40a0-bc5d-9238fbcdf159
+2021-10-08 12:21:19,825280 - sanic.root - INFO - Handled exception NotFound, for method None
+2021-10-08 12:21:19,832430 - sanic.access - INFO - 127.0.0.1:50503 GET http://localhost:7071/favicon.ico  400 161 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 31adf21f-4c70-4d91-a33e-1b3cf1fe21c9
+2021-10-08 12:21:46,933457 - sanic.root - INFO - Received signal SIGINT. Shutting down.
+2021-10-08 12:21:46,936035 - sanic.root - INFO - Stopping worker [68006]
+2021-10-08 12:21:46,936345 - sanic.root - INFO - Stopping worker [68007]
+2021-10-08 12:22:02,303029 - sanic.root - INFO - Handled exception ServiceUnavailable, for method None
+2021-10-08 12:22:02,313456 - sanic.error - ERROR - protocol.connection_task uncaught
+Traceback (most recent call last):
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/sanic/http.py", line 130, in http1
+    await self.http1_request_header()
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/sanic/http.py", line 203, in http1_request_header
+    await self._receive_more()
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/sanic/server.py", line 222, in receive_more
+    await self._data_received.wait()
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/asyncio/locks.py", line 309, in wait
+    await fut
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/sanic/server.py", line 197, in connection_task
+    await self._http.http1()
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/sanic/http.py", line 146, in http1
+    await self.error_response(e)
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/sanic/http.py", line 420, in error_response
+    await app.handle_exception(self.request, exception)
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/sanic/app.py", line 704, in handle_exception
+    await response.send(end_stream=True)
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/sanic/response.py", line 122, in send
+    await self.stream.send(data, end_stream=end_stream)
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/sanic/http.py", line 348, in http1_response_header
+    self.log_response()
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/sanic/http.py", line 457, in log_response
+    extra["request"] = f"{req.method} {req.url}"
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/sanic/request.py", line 669, in url
+    (self.scheme, self.host, self.path, None, self.query_string, None)
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/sanic/request.py", line 596, in scheme
+    if self.transport.get_extra_info("sslcontext"):
+AttributeError: 'NoneType' object has no attribute 'get_extra_info'
+2021-10-08 12:22:02,341098 - sanic.root - INFO - Server Stopped
+2021-10-08 12:22:07,064509 - sanic.root - INFO - ping
+2021-10-08 12:22:07,064698 - sanic.root - INFO - v4/user_details/login
+2021-10-08 12:22:07,064804 - sanic.root - INFO - v4/user_details/add-user
+2021-10-08 12:22:07,064909 - sanic.root - INFO - v4/question_details
+2021-10-08 12:22:07,065113 - sanic.root - INFO - v4/question_details/create
+2021-10-08 12:22:07,065187 - sanic.root - INFO - v4/answer_details/create
+2021-10-08 12:22:07,065256 - sanic.root - INFO - v4/answer_details
+2021-10-08 12:22:07,065324 - sanic.root - INFO - v4/comment_details
+2021-10-08 12:22:07,065388 - sanic.root - INFO - v4/comment_details/create
+2021-10-08 12:22:07,065454 - sanic.root - INFO - v4/rating_details
+2021-10-08 12:22:07,065519 - sanic.root - INFO - v4/rating_details/create
+2021-10-08 12:22:07,065583 - sanic.root - INFO - v4/so_basictest
+2021-10-08 12:22:07,065656 - sanic.root - INFO - v4/question_details/<id:int>
+2021-10-08 12:22:07,065765 - sanic.root - INFO - v4/answer_details/<id:int>
+2021-10-08 12:22:07,065885 - sanic.root - INFO - v4/comment_details/<id:int>
+2021-10-08 12:22:07,065970 - sanic.root - INFO - v4/rating_details/<id:int>
+2021-10-08 12:22:07,066142 - sanic.root - INFO - Goin' Fast @ http://0.0.0.0:7071
+2021-10-08 12:22:07,158675 - sanic.root - INFO - Starting worker [68066]
+2021-10-08 12:22:07,158867 - sanic.root - INFO - Starting worker [68067]
+2021-10-08 12:22:12,617966 - sanic.access - INFO - 127.0.0.1:50577 GET http://localhost:7071/v4/rating_details/  200 102 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 69796f07-f04d-444c-a478-bc374cc9968c
+2021-10-08 12:22:12,664050 - sanic.root - INFO - Handled exception NotFound, for method None
+2021-10-08 12:22:12,670657 - sanic.access - INFO - 127.0.0.1:50577 GET http://localhost:7071/favicon.ico  400 161 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 007207f5-f0f5-428a-82b4-8996532c8577
+2021-10-08 12:22:16,566967 - sanic.access - INFO - 127.0.0.1:50577 GET http://localhost:7071/v4/rating_details/1  200 72 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 047c76f0-6e91-4e91-8b64-ac212394e5cc
+2021-10-08 12:22:16,882304 - sanic.root - INFO - Handled exception NotFound, for method None
+2021-10-08 12:22:16,894185 - sanic.access - INFO - 127.0.0.1:50577 GET http://localhost:7071/favicon.ico  400 161 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 b50af10f-bcf0-4d8c-aacd-8a630e62e2d6
+2021-10-08 12:23:12,633754 - sanic.root - INFO - Handled exception RequestTimeout, for method None
+2021-10-08 12:23:12,643095 - sanic.access - INFO - UNKNOWN NONE http:///*  408 117 None d56f35b7-f1e5-4617-be36-9422272357d0
+2021-10-08 12:38:56,187461 - sanic.root - INFO - Received signal SIGINT. Shutting down.
+2021-10-08 12:38:56,190815 - sanic.root - INFO - Stopping worker [68067]
+2021-10-08 12:38:56,190720 - sanic.root - INFO - Stopping worker [68066]
+2021-10-08 12:38:56,208408 - sanic.root - INFO - Server Stopped
+2021-10-11 12:23:40,410555 - sanic.root - INFO - ping
+2021-10-11 12:23:40,411906 - sanic.root - INFO - v4/user_details/add-user
+2021-10-11 12:23:40,412096 - sanic.root - INFO - v4/user_details/login
+2021-10-11 12:23:40,412223 - sanic.root - INFO - v4/question_details
+2021-10-11 12:23:40,412340 - sanic.root - INFO - v4/question_details/create
+2021-10-11 12:23:40,412452 - sanic.root - INFO - v4/answer_details/create
+2021-10-11 12:23:40,412563 - sanic.root - INFO - v4/answer_details
+2021-10-11 12:23:40,412676 - sanic.root - INFO - v4/comment_details/create
+2021-10-11 12:23:40,412786 - sanic.root - INFO - v4/comment_details
+2021-10-11 12:23:40,412894 - sanic.root - INFO - v4/rating_details/create
+2021-10-11 12:23:40,413004 - sanic.root - INFO - v4/rating_details
+2021-10-11 12:23:40,413112 - sanic.root - INFO - v4/so_basictest
+2021-10-11 12:23:40,413226 - sanic.root - INFO - v4/question_details/<id:int>
+2021-10-11 12:23:40,413313 - sanic.root - INFO - v4/answer_details/<id:int>
+2021-10-11 12:23:40,413399 - sanic.root - INFO - v4/comment_details/<id:int>
+2021-10-11 12:23:40,413486 - sanic.root - INFO - v4/rating_details/<id:int>
+2021-10-11 12:23:40,413677 - sanic.root - INFO - Goin' Fast @ http://0.0.0.0:7071
+2021-10-11 12:23:40,534710 - sanic.root - INFO - Starting worker [80982]
+2021-10-11 12:23:40,536144 - sanic.root - INFO - Starting worker [80981]
+2021-10-11 12:26:38,590553 - sanic.root - INFO - Received signal SIGINT. Shutting down.
+2021-10-11 12:26:38,594748 - sanic.root - INFO - Stopping worker [80982]
+2021-10-11 12:26:38,594674 - sanic.root - INFO - Stopping worker [80981]
+2021-10-11 12:26:38,621431 - sanic.root - INFO - Server Stopped
+2021-10-11 17:08:13,538701 - sanic.root - INFO - ping
+2021-10-11 17:08:13,538879 - sanic.root - INFO - v4/user_details/login
+2021-10-11 17:08:13,539009 - sanic.root - INFO - v4/user_details/add-user
+2021-10-11 17:08:13,539146 - sanic.root - INFO - v4/question_details
+2021-10-11 17:08:13,539236 - sanic.root - INFO - v4/question_details/create
+2021-10-11 17:08:13,539325 - sanic.root - INFO - v4/answer_details/create
+2021-10-11 17:08:13,539395 - sanic.root - INFO - v4/answer_details
+2021-10-11 17:08:13,539461 - sanic.root - INFO - v4/comment_details/create
+2021-10-11 17:08:13,539530 - sanic.root - INFO - v4/comment_details
+2021-10-11 17:08:13,539601 - sanic.root - INFO - v4/rating_details
+2021-10-11 17:08:13,539668 - sanic.root - INFO - v4/rating_details/create
+2021-10-11 17:08:13,539733 - sanic.root - INFO - v4/so_basictest
+2021-10-11 17:08:13,539799 - sanic.root - INFO - v4/question_details/<id:int>
+2021-10-11 17:08:13,539865 - sanic.root - INFO - v4/answer_details/<id:int>
+2021-10-11 17:08:13,539932 - sanic.root - INFO - v4/comment_details/<id:int>
+2021-10-11 17:08:13,539998 - sanic.root - INFO - v4/rating_details/<id:int>
+2021-10-11 17:08:13,540226 - sanic.root - INFO - Goin' Fast @ http://0.0.0.0:7071
+2021-10-11 17:08:13,605353 - sanic.root - INFO - Starting worker [83159]
+2021-10-11 17:08:13,605827 - sanic.root - INFO - Starting worker [83160]
+2021-10-11 18:06:48,171750 - sanic.root - INFO - Received signal SIGINT. Shutting down.
+2021-10-11 18:06:48,180989 - sanic.root - INFO - Stopping worker [83160]
+2021-10-11 18:06:48,186301 - sanic.root - INFO - Stopping worker [83159]
+2021-10-11 18:06:48,207590 - sanic.root - INFO - Server Stopped
+2021-10-11 18:11:48,399399 - sanic.root - INFO - ping
+2021-10-11 18:11:48,400656 - sanic.root - INFO - v4/user_details/login
+2021-10-11 18:11:48,400896 - sanic.root - INFO - v4/user_details/add-user
+2021-10-11 18:11:48,401067 - sanic.root - INFO - v4/question_details/create
+2021-10-11 18:11:48,401194 - sanic.root - INFO - v4/question_details
+2021-10-11 18:11:48,401273 - sanic.root - INFO - v4/answer_details/create
+2021-10-11 18:11:48,401343 - sanic.root - INFO - v4/answer_details
+2021-10-11 18:11:48,401410 - sanic.root - INFO - v4/comment_details
+2021-10-11 18:11:48,401478 - sanic.root - INFO - v4/comment_details/create
+2021-10-11 18:11:48,401582 - sanic.root - INFO - v4/rating_details
+2021-10-11 18:11:48,401667 - sanic.root - INFO - v4/rating_details/create
+2021-10-11 18:11:48,401735 - sanic.root - INFO - v4/so_basictest
+2021-10-11 18:11:48,401800 - sanic.root - INFO - v4/question_details/<id:int>
+2021-10-11 18:11:48,401867 - sanic.root - INFO - v4/answer_details/<id:int>
+2021-10-11 18:11:48,401932 - sanic.root - INFO - v4/comment_details/<id:int>
+2021-10-11 18:11:48,401997 - sanic.root - INFO - v4/rating_details/<id:int>
+2021-10-11 18:11:48,402237 - sanic.root - INFO - Goin' Fast @ http://0.0.0.0:7071
+2021-10-11 18:11:48,490493 - sanic.root - INFO - Starting worker [83945]
+2021-10-11 18:11:48,490603 - sanic.root - INFO - Starting worker [83946]
+2021-10-11 18:15:51,267992 - sanic.root - INFO - Received signal SIGINT. Shutting down.
+2021-10-11 18:15:51,275501 - sanic.root - INFO - Stopping worker [83945]
+2021-10-11 18:15:51,276323 - sanic.root - INFO - Stopping worker [83946]
+2021-10-11 18:15:51,298984 - sanic.root - INFO - Server Stopped
+2021-10-12 16:14:06,563784 - sanic.root - INFO - ping
+2021-10-12 16:14:06,563951 - sanic.root - INFO - v4/user_details/add-user
+2021-10-12 16:14:06,564054 - sanic.root - INFO - v4/user_details/login
+2021-10-12 16:14:06,564170 - sanic.root - INFO - v4/question_details/create
+2021-10-12 16:14:06,564257 - sanic.root - INFO - v4/question_details
+2021-10-12 16:14:06,564328 - sanic.root - INFO - v4/answer_details
+2021-10-12 16:14:06,564393 - sanic.root - INFO - v4/answer_details/create
+2021-10-12 16:14:06,564459 - sanic.root - INFO - v4/comment_details
+2021-10-12 16:14:06,564525 - sanic.root - INFO - v4/comment_details/create
+2021-10-12 16:14:06,564593 - sanic.root - INFO - v4/rating_details
+2021-10-12 16:14:06,564657 - sanic.root - INFO - v4/rating_details/create
+2021-10-12 16:14:06,564721 - sanic.root - INFO - v4/so_basictest
+2021-10-12 16:14:06,564785 - sanic.root - INFO - v4/question_details/<id:int>
+2021-10-12 16:14:06,564851 - sanic.root - INFO - v4/answer_details/<id:int>
+2021-10-12 16:14:06,564917 - sanic.root - INFO - v4/comment_details/<id:int>
+2021-10-12 16:14:06,565017 - sanic.root - INFO - v4/rating_details/<id:int>
+2021-10-12 16:14:06,565244 - sanic.root - INFO - Goin' Fast @ http://0.0.0.0:7071
+2021-10-12 16:14:06,677685 - sanic.root - INFO - Starting worker [90222]
+2021-10-12 16:14:06,678749 - sanic.root - INFO - Starting worker [90223]
+2021-10-12 16:15:21,437799 - sanic.root - INFO - Handled exception MethodNotSupported, for method None
+2021-10-12 16:15:21,458021 - sanic.access - INFO - 127.0.0.1:51846 POST http://localhost:7071/v4/answer_details/  400 195 PostmanRuntime/7.28.4 93b687e6-7a99-4dc1-a793-bdc205e1cb2a
+2021-10-12 16:16:58,348247 - sanic.root - INFO - Received signal SIGINT. Shutting down.
+2021-10-12 16:16:58,353531 - sanic.root - INFO - Stopping worker [90222]
+2021-10-12 16:16:58,354699 - sanic.root - INFO - Stopping worker [90223]
+2021-10-12 16:16:58,377413 - sanic.root - INFO - Server Stopped
