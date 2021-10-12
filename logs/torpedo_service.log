@@ -1107,3 +1107,152 @@ AttributeError: 'NoneType' object has no attribute 'get_extra_info'
 2021-10-12 16:16:58,353531 - sanic.root - INFO - Stopping worker [90222]
 2021-10-12 16:16:58,354699 - sanic.root - INFO - Stopping worker [90223]
 2021-10-12 16:16:58,377413 - sanic.root - INFO - Server Stopped
+2021-10-12 16:39:36,533608 - sanic.root - INFO - ping
+2021-10-12 16:39:36,533895 - sanic.root - INFO - v4/user_details/add-user
+2021-10-12 16:39:36,534038 - sanic.root - INFO - v4/user_details/login
+2021-10-12 16:39:36,534127 - sanic.root - INFO - v4/question_details
+2021-10-12 16:39:36,534198 - sanic.root - INFO - v4/question_details/create
+2021-10-12 16:39:36,534265 - sanic.root - INFO - v4/answer_details
+2021-10-12 16:39:36,534358 - sanic.root - INFO - v4/answer_details/create
+2021-10-12 16:39:36,534475 - sanic.root - INFO - v4/comment_details
+2021-10-12 16:39:36,534571 - sanic.root - INFO - v4/comment_details/create
+2021-10-12 16:39:36,534639 - sanic.root - INFO - v4/rating_details/create
+2021-10-12 16:39:36,534704 - sanic.root - INFO - v4/rating_details
+2021-10-12 16:39:36,534769 - sanic.root - INFO - v4/so_basictest
+2021-10-12 16:39:36,534836 - sanic.root - INFO - v4/question_details/<id:int>
+2021-10-12 16:39:36,534901 - sanic.root - INFO - v4/answer_details/<id:int>
+2021-10-12 16:39:36,534965 - sanic.root - INFO - v4/comment_details/<id:int>
+2021-10-12 16:39:36,535027 - sanic.root - INFO - v4/rating_details/<id:int>
+2021-10-12 16:39:36,535176 - sanic.root - INFO - Goin' Fast @ http://0.0.0.0:7071
+2021-10-12 16:39:36,600337 - sanic.root - INFO - Starting worker [90658]
+2021-10-12 16:39:36,599953 - sanic.root - INFO - Starting worker [90659]
+2021-10-12 16:40:53,509745 - sanic.error - ERROR - column "user_id" does not exist
+HINT:  Perhaps you meant to reference the column "answers.user_id_id".
+Traceback (most recent call last):
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/tortoise/backends/asyncpg/client.py", line 36, in translate_exceptions_
+    return await func(self, *args)
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/tortoise/backends/asyncpg/client.py", line 185, in execute_query
+    rows = await connection.fetch(*params)
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/torpedo/clients.py", line 80, in call
+    return await wrapped(*args, **kwargs)
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/asyncpg/connection.py", line 601, in fetch
+    return await self._execute(
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/asyncpg/connection.py", line 1639, in _execute
+    result, _ = await self.__execute(
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/asyncpg/connection.py", line 1664, in __execute
+    return await self._do_execute(
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/asyncpg/connection.py", line 1691, in _do_execute
+    stmt = await self._get_statement(
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/asyncpg/connection.py", line 393, in _get_statement
+    statement = await self._protocol.prepare(
+  File "asyncpg/protocol/protocol.pyx", line 168, in prepare
+asyncpg.exceptions.UndefinedColumnError: column "user_id" does not exist
+HINT:  Perhaps you meant to reference the column "answers.user_id_id".
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/sanic/app.py", line 770, in handle_request
+    response = await response
+  File "/Users/vivek/Desktop/sanic_3/app/routes/answer_details.py", line 19, in show_answer
+    _response = await AnswerManager.get_answers(request)
+  File "/Users/vivek/Desktop/sanic_3/app/managers/answer/answer_manager.py", line 15, in get_answers
+    answers = await Answers.all()
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/tortoise/queryset.py", line 908, in _execute
+    instance_list = await self._db.executor_class(
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/tortoise/backends/base/executor.py", line 126, in execute_select
+    _, raw_results = await self.db.execute_query(query.get_sql())
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/tortoise/backends/asyncpg/client.py", line 38, in translate_exceptions_
+    raise OperationalError(exc)
+tortoise.exceptions.OperationalError: column "user_id" does not exist
+HINT:  Perhaps you meant to reference the column "answers.user_id_id".
+2021-10-12 16:40:53,562946 - sanic.access - INFO - 127.0.0.1:52035 GET http://localhost:7071/v4/answer_details/  500 127 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 7553bec7-c484-43af-80e0-0ab9e760052a
+2021-10-12 16:40:53,708486 - sanic.root - INFO - Handled exception NotFound, for method None
+2021-10-12 16:40:53,715584 - sanic.access - INFO - 127.0.0.1:52035 GET http://localhost:7071/favicon.ico  400 161 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 9032dcb5-e44e-4c2b-803e-8117b7209bfb
+2021-10-12 16:41:39,190750 - sanic.error - ERROR - get_answer_by_id() takes 2 positional arguments but 3 were given
+Traceback (most recent call last):
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/sanic/app.py", line 770, in handle_request
+    response = await response
+  File "/Users/vivek/Desktop/sanic_3/app/routes/answer_details.py", line 27, in show_answer_by_id
+    _response = await AnswerManager.get_answer_by_id(request, id)
+TypeError: get_answer_by_id() takes 2 positional arguments but 3 were given
+2021-10-12 16:41:39,210001 - sanic.access - INFO - 127.0.0.1:52037 GET http://localhost:7071/v4/answer_details/1  500 127 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 2bde76c4-1eae-489a-a41f-2d7c59bb43a1
+2021-10-12 16:41:39,249405 - sanic.root - INFO - Handled exception NotFound, for method None
+2021-10-12 16:41:39,255795 - sanic.access - INFO - 127.0.0.1:52037 GET http://localhost:7071/favicon.ico  400 161 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 dd2b9c0f-7f49-4314-968f-305e7c61c381
+2021-10-12 16:41:44,580882 - sanic.error - ERROR - column "user_id" does not exist
+HINT:  Perhaps you meant to reference the column "answers.user_id_id".
+Traceback (most recent call last):
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/tortoise/backends/asyncpg/client.py", line 36, in translate_exceptions_
+    return await func(self, *args)
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/tortoise/backends/asyncpg/client.py", line 185, in execute_query
+    rows = await connection.fetch(*params)
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/torpedo/clients.py", line 80, in call
+    return await wrapped(*args, **kwargs)
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/asyncpg/connection.py", line 601, in fetch
+    return await self._execute(
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/asyncpg/connection.py", line 1639, in _execute
+    result, _ = await self.__execute(
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/asyncpg/connection.py", line 1664, in __execute
+    return await self._do_execute(
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/asyncpg/connection.py", line 1691, in _do_execute
+    stmt = await self._get_statement(
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/asyncpg/connection.py", line 393, in _get_statement
+    statement = await self._protocol.prepare(
+  File "asyncpg/protocol/protocol.pyx", line 168, in prepare
+asyncpg.exceptions.UndefinedColumnError: column "user_id" does not exist
+HINT:  Perhaps you meant to reference the column "answers.user_id_id".
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/sanic/app.py", line 770, in handle_request
+    response = await response
+  File "/Users/vivek/Desktop/sanic_3/app/routes/answer_details.py", line 19, in show_answer
+    _response = await AnswerManager.get_answers(request)
+  File "/Users/vivek/Desktop/sanic_3/app/managers/answer/answer_manager.py", line 15, in get_answers
+    answers = await Answers.all()
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/tortoise/queryset.py", line 908, in _execute
+    instance_list = await self._db.executor_class(
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/tortoise/backends/base/executor.py", line 126, in execute_select
+    _, raw_results = await self.db.execute_query(query.get_sql())
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/tortoise/backends/asyncpg/client.py", line 38, in translate_exceptions_
+    raise OperationalError(exc)
+tortoise.exceptions.OperationalError: column "user_id" does not exist
+HINT:  Perhaps you meant to reference the column "answers.user_id_id".
+2021-10-12 16:41:44,611591 - sanic.access - INFO - 127.0.0.1:52037 GET http://localhost:7071/v4/answer_details/  500 127 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 df559c35-9a2c-45e8-9f19-e6006afa3d31
+2021-10-12 16:41:44,670836 - sanic.root - INFO - Handled exception NotFound, for method None
+2021-10-12 16:41:44,677244 - sanic.access - INFO - 127.0.0.1:52037 GET http://localhost:7071/favicon.ico  400 161 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 741a320f-b2c7-4f4d-8d68-1d7eecc2966b
+2021-10-12 16:42:39,211813 - sanic.root - INFO - Handled exception RequestTimeout, for method None
+2021-10-12 16:42:39,217484 - sanic.access - INFO - UNKNOWN NONE http:///*  408 117 None 0555e9b1-16e3-4e41-9709-ff4f115ef2b7
+2021-10-12 16:48:39,607609 - sanic.root - INFO - Received signal SIGINT. Shutting down.
+2021-10-12 16:48:39,612373 - sanic.root - INFO - Stopping worker [90659]
+2021-10-12 16:48:39,612211 - sanic.root - INFO - Stopping worker [90658]
+2021-10-12 16:48:39,630311 - sanic.root - INFO - Server Stopped
+2021-10-12 16:50:33,384607 - sanic.root - INFO - ping
+2021-10-12 16:50:33,385869 - sanic.root - INFO - v4/user_details/login
+2021-10-12 16:50:33,386077 - sanic.root - INFO - v4/user_details/add-user
+2021-10-12 16:50:33,386199 - sanic.root - INFO - v4/question_details/create
+2021-10-12 16:50:33,386298 - sanic.root - INFO - v4/question_details
+2021-10-12 16:50:33,386393 - sanic.root - INFO - v4/answer_details
+2021-10-12 16:50:33,386486 - sanic.root - INFO - v4/answer_details/create
+2021-10-12 16:50:33,386573 - sanic.root - INFO - v4/comment_details
+2021-10-12 16:50:33,386660 - sanic.root - INFO - v4/comment_details/create
+2021-10-12 16:50:33,386770 - sanic.root - INFO - v4/rating_details/create
+2021-10-12 16:50:33,386927 - sanic.root - INFO - v4/rating_details
+2021-10-12 16:50:33,387030 - sanic.root - INFO - v4/so_basictest
+2021-10-12 16:50:33,387103 - sanic.root - INFO - v4/question_details/<id:int>
+2021-10-12 16:50:33,387200 - sanic.root - INFO - v4/answer_details/<id:int>
+2021-10-12 16:50:33,387273 - sanic.root - INFO - v4/comment_details/<id:int>
+2021-10-12 16:50:33,387341 - sanic.root - INFO - v4/rating_details/<id:int>
+2021-10-12 16:50:33,387496 - sanic.root - INFO - Goin' Fast @ http://0.0.0.0:7071
+2021-10-12 16:50:33,479092 - sanic.root - INFO - Starting worker [90915]
+2021-10-12 16:50:33,479092 - sanic.root - INFO - Starting worker [90916]
+2021-10-12 16:50:55,370428 - sanic.access - INFO - 127.0.0.1:52396 GET http://localhost:7071/v4/answer_details/  200 61 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 61974829-09da-462c-9df3-a58f751e476d
+2021-10-12 16:50:55,414369 - sanic.root - INFO - Handled exception NotFound, for method None
+2021-10-12 16:50:55,422874 - sanic.access - INFO - 127.0.0.1:52396 GET http://localhost:7071/favicon.ico  400 161 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 50358010-999d-4b63-ab23-fa284237aec4
+2021-10-12 16:51:55,396230 - sanic.root - INFO - Handled exception RequestTimeout, for method None
+2021-10-12 16:51:55,408746 - sanic.access - INFO - UNKNOWN NONE http:///*  408 117 None c0e6faad-38f7-47f2-8e62-b6dc96be4607
+2021-10-12 16:53:17,887732 - sanic.root - INFO - Received signal SIGINT. Shutting down.
+2021-10-12 16:53:17,894073 - sanic.root - INFO - Stopping worker [90916]
+2021-10-12 16:53:17,893560 - sanic.root - INFO - Stopping worker [90915]
+2021-10-12 16:53:18,100676 - sanic.root - INFO - Server Stopped

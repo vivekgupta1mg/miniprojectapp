@@ -534,3 +534,90 @@ Traceback (most recent call last):
   File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/sanic/request.py", line 596, in scheme
     if self.transport.get_extra_info("sslcontext"):
 AttributeError: 'NoneType' object has no attribute 'get_extra_info'
+2021-10-12 16:40:53,536783 - sanic.error - ERROR - column "user_id" does not exist
+HINT:  Perhaps you meant to reference the column "answers.user_id_id".
+Traceback (most recent call last):
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/tortoise/backends/asyncpg/client.py", line 36, in translate_exceptions_
+    return await func(self, *args)
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/tortoise/backends/asyncpg/client.py", line 185, in execute_query
+    rows = await connection.fetch(*params)
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/torpedo/clients.py", line 80, in call
+    return await wrapped(*args, **kwargs)
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/asyncpg/connection.py", line 601, in fetch
+    return await self._execute(
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/asyncpg/connection.py", line 1639, in _execute
+    result, _ = await self.__execute(
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/asyncpg/connection.py", line 1664, in __execute
+    return await self._do_execute(
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/asyncpg/connection.py", line 1691, in _do_execute
+    stmt = await self._get_statement(
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/asyncpg/connection.py", line 393, in _get_statement
+    statement = await self._protocol.prepare(
+  File "asyncpg/protocol/protocol.pyx", line 168, in prepare
+asyncpg.exceptions.UndefinedColumnError: column "user_id" does not exist
+HINT:  Perhaps you meant to reference the column "answers.user_id_id".
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/sanic/app.py", line 770, in handle_request
+    response = await response
+  File "/Users/vivek/Desktop/sanic_3/app/routes/answer_details.py", line 19, in show_answer
+    _response = await AnswerManager.get_answers(request)
+  File "/Users/vivek/Desktop/sanic_3/app/managers/answer/answer_manager.py", line 15, in get_answers
+    answers = await Answers.all()
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/tortoise/queryset.py", line 908, in _execute
+    instance_list = await self._db.executor_class(
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/tortoise/backends/base/executor.py", line 126, in execute_select
+    _, raw_results = await self.db.execute_query(query.get_sql())
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/tortoise/backends/asyncpg/client.py", line 38, in translate_exceptions_
+    raise OperationalError(exc)
+tortoise.exceptions.OperationalError: column "user_id" does not exist
+HINT:  Perhaps you meant to reference the column "answers.user_id_id".
+2021-10-12 16:41:39,196767 - sanic.error - ERROR - get_answer_by_id() takes 2 positional arguments but 3 were given
+Traceback (most recent call last):
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/sanic/app.py", line 770, in handle_request
+    response = await response
+  File "/Users/vivek/Desktop/sanic_3/app/routes/answer_details.py", line 27, in show_answer_by_id
+    _response = await AnswerManager.get_answer_by_id(request, id)
+TypeError: get_answer_by_id() takes 2 positional arguments but 3 were given
+2021-10-12 16:41:44,588445 - sanic.error - ERROR - column "user_id" does not exist
+HINT:  Perhaps you meant to reference the column "answers.user_id_id".
+Traceback (most recent call last):
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/tortoise/backends/asyncpg/client.py", line 36, in translate_exceptions_
+    return await func(self, *args)
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/tortoise/backends/asyncpg/client.py", line 185, in execute_query
+    rows = await connection.fetch(*params)
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/torpedo/clients.py", line 80, in call
+    return await wrapped(*args, **kwargs)
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/asyncpg/connection.py", line 601, in fetch
+    return await self._execute(
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/asyncpg/connection.py", line 1639, in _execute
+    result, _ = await self.__execute(
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/asyncpg/connection.py", line 1664, in __execute
+    return await self._do_execute(
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/asyncpg/connection.py", line 1691, in _do_execute
+    stmt = await self._get_statement(
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/asyncpg/connection.py", line 393, in _get_statement
+    statement = await self._protocol.prepare(
+  File "asyncpg/protocol/protocol.pyx", line 168, in prepare
+asyncpg.exceptions.UndefinedColumnError: column "user_id" does not exist
+HINT:  Perhaps you meant to reference the column "answers.user_id_id".
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/sanic/app.py", line 770, in handle_request
+    response = await response
+  File "/Users/vivek/Desktop/sanic_3/app/routes/answer_details.py", line 19, in show_answer
+    _response = await AnswerManager.get_answers(request)
+  File "/Users/vivek/Desktop/sanic_3/app/managers/answer/answer_manager.py", line 15, in get_answers
+    answers = await Answers.all()
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/tortoise/queryset.py", line 908, in _execute
+    instance_list = await self._db.executor_class(
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/tortoise/backends/base/executor.py", line 126, in execute_select
+    _, raw_results = await self.db.execute_query(query.get_sql())
+  File "/Users/vivek/Desktop/sanic_3/env/lib/python3.8/site-packages/tortoise/backends/asyncpg/client.py", line 38, in translate_exceptions_
+    raise OperationalError(exc)
+tortoise.exceptions.OperationalError: column "user_id" does not exist
+HINT:  Perhaps you meant to reference the column "answers.user_id_id".
