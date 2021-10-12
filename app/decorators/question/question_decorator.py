@@ -19,7 +19,7 @@ def question_validate():
         async def validate(self,request, *args, **kwargs):
             # run some method that checks the request
             # for the client's authorization status
-            is_validate= Check(request)
+            is_validate= Check(**request.json)
 
             if is_validate:
                 # the user is authorized.

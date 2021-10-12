@@ -16,17 +16,17 @@ class AnswerManager:
         return answers
 
     @classmethod
-    async def get_answer_by_id(cls, payload):
-        answers = await Answers.get(id=payload["id"])
+    async def get_answer_by_id(cls, request,id):
+        answers = await Answers.get(id=id)
         return answers
 
     @classmethod
-    async def create_answer(cls, request):
+    async def create_answer(cls,payload):
 
-        user_id = await UserManager.get_user_by_id({"username": "vivek"})
-        question_id = await QuestionManager.get_question_by_id({"id": 22})
+        # user_id = await UserManager.get_user_by_id({"username": "vivek"})
+        # question_id = await QuestionManager.get_question_by_id({"id": 22})
 
-        payload = {"question_id": question_id, "user_id": user_id, "answer_text": "python is simple?",
-                   "votes": 1, "accepted": True}
-        answers = await DB.create_instance(Answers, payload)
-        return answers
+        # payload = {"question_id": question_id, "user_id": user_id, "answer_text": "python is simple?",
+        #            "votes": 1, "accepted": True}
+        payload = await DB.create_instance(Answers, payload)
+        return payload

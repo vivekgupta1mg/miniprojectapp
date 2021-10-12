@@ -17,19 +17,19 @@ class RatingManager:
         return ratings
 
     @classmethod
-    async def get_rating_by_id(cls, request, rating_id):
-        ratings = await Ratings.get(id=rating_id)
+    async def get_rating_by_id(cls, request, id):
+        ratings = await Ratings.get(id=id)
         return ratings
 
     @classmethod
-    async def create_rating(cls, request):
-        user_id = await UserManager.get_user_by_id({"username": "vivek"})
-        question_id = await QuestionManager.get_question_by_id({"id": 22})
-        answer_id = await AnswerManager.get_answer_by_id({"id": 1})
+    async def create_rating(cls, payload):
+        # user_id = await UserManager.get_user_by_id({"username": "vivek"})
+        # question_id = await QuestionManager.get_question_by_id({"id": 22})
+        # answer_id = await AnswerManager.get_answer_by_id({"id": 1})
 
-        payload = {"question_id": question_id, "user_id": user_id, "answer_id": answer_id, "rating_star": 4}
-        ratings = await DB.create_instance(Ratings, payload)
-        return ratings
+        # payload = {"question_id": question_id, "user_id": user_id, "answer_id": answer_id, "rating_star": 4}
+        payload = await DB.create_instance(Ratings, payload)
+        return payload
 
 
        

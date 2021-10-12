@@ -22,14 +22,15 @@ async def show_question(request):
 @question_validate()
 @question_details.route("/<id:int>", methods=["GET"])
 async def show_question_by_id(request, id):
-    _response = await QuestionManager.get_question_by_id(request, id)
+    _response = await QuestionManager.get_question_by_id(request,id)
     return send_response({'message': json.dumps(
         _response, indent=4, sort_keys=True, default=str)})
 
 
 @question_validate()
-@question_details.route("/create", methods=["GET"])
+@question_details.route("/create", methods=["POST"])
 async def create_question(request):
-    _response = await QuestionManager.create_question(request)
+    payload = request.json
+    payload = await QuestionManager.create_question(request,payload)
     return send_response({"message": json.dumps(
-        _response, indent=4, sort_keys=True, default=str)})
+        payload, indent=4, sort_keys=True, default=str)})

@@ -12,7 +12,6 @@ answer_details = Blueprint(
 
 
 
-
 @answer_validate()
 @answer_details.route("/", methods=["GET"])
 async def show_answer(request):
@@ -20,18 +19,19 @@ async def show_answer(request):
     return send_response({'message': json.dumps(
         _response, indent=4, sort_keys=True, default=str)})
 
-
 @answer_validate()
 @answer_details.route("/<id:int>", methods=["GET"])
 async def show_answer_by_id(request, id):
+    
     _response = await AnswerManager.get_answer_by_id(request, id)
     return send_response({'message': json.dumps(
         _response, indent=4, sort_keys=True, default=str)})
 
 
 @answer_validate()
-@answer_details.route("/create", methods=["GET"])
+@answer_details.route("/create", methods=["POST"])
 async def create_answer(request):
-    _response = await AnswerManager.create_answer(request)
+    payload = request.json
+    payload = await AnswerManager.create_answer(request, payload)
     return send_response({"message": json.dumps(
-        _response, indent=4, sort_keys=True, default=str)})
+        payload, indent=4, sort_keys=True, default=str)})

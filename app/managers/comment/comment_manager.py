@@ -19,19 +19,19 @@ class CommentManager:
         return comments
 
     @classmethod
-    async def get_comment_by_id(cls, request, comment_id):
-        comments = await Comments.get(id=comment_id)
+    async def get_comment_by_id(cls, request, id):
+        comments = await Comments.get(id=id)
         return comments
 
     @classmethod
-    async def create_comment(cls, request):
-        user_id = await UserManager.get_user_by_id({"username": "vivek"})
-        question_id = await QuestionManager.get_question_by_id({"id": 22})
-        answer_id = await AnswerManager.get_answer_by_id({"id": 1})
-        question_entity_id = await QuestionManager.get_question_by_id({"id": 22})
-        answer_entity_id = await AnswerManager.get_answer_by_id({"id": 1})
+    async def create_comment(cls, payload):
+        # user_id = await UserManager.get_user_by_id({"username": "vivek"})
+        # question_id = await QuestionManager.get_question_by_id({"id": 22})
+        # answer_id = await AnswerManager.get_answer_by_id({"id": 1})
+        # question_entity_id = await QuestionManager.get_question_by_id({"id": 22})
+        # answer_entity_id = await AnswerManager.get_answer_by_id({"id": 1})
 
-        payload = {"question_id": question_id, "user_id": user_id, "answer_id": answer_id, "question_entity_id":
-                   question_entity_id, "answer_entity_id": answer_entity_id, "entity_type": 1, "comment_text": "good"}
-        comments= await DB.create_instance(Comments, payload)
-        return comments
+        # payload = {"question_id": question_id, "user_id": user_id, "answer_id": answer_id, "question_entity_id":
+        #            question_entity_id, "answer_entity_id": answer_entity_id, "entity_type": 1, "comment_text": "good"}
+        payload= await DB.create_instance(Comments, payload)
+        return payload

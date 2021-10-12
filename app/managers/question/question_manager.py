@@ -15,16 +15,15 @@ class QuestionManager:
         return questions
 
     @classmethod
-    async def get_question_by_id(cls, payload):
-        questions = await Questions.get(id=payload["id"])
-        
+    async def get_question_by_id(cls, request, id):
+        questions = await Questions.get(id=id)
         return questions
 
     @classmethod
-    async def create_question(cls, request):
-        user_id = await UserManager.get_user_by_id({"username": "vivek"})
+    async def create_question(cls, payload):
+        # user_id = await UserManager.get_user_by_id({"username": "vivek"})
 
-        payload = {"user_id": user_id, "question_text": "how is python?",
-                   "description": "nothing have to describe!", "answered": True}
+        # payload = {"user_id": user_id, "question_text": "how is python?",
+        #            "description": "nothing have to describe!", "answered": True}
         questions = await DB.create_instance(Questions, payload)
         return questions

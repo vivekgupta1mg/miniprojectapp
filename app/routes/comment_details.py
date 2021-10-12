@@ -28,8 +28,9 @@ async def show_comment_by_id(request, id):
 
 
 @comment_validate()
-@comment_details.route("/create", methods=["GET"])
+@comment_details.route("/create", methods=["POST"])
 async def create_comment(request):
-    _response = await CommentManager.create_comment(request)
+    payload = request.json
+    payload = await CommentManager.create_comment(request,payload)
     return send_response({"message": json.dumps(
-        _response, indent=4, sort_keys=True, default=str)})
+        payload, indent=4, sort_keys=True, default=str)})
